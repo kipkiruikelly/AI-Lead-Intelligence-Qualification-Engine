@@ -1,0 +1,2698 @@
+{
+  "run_metadata": {
+    "run_timestamp": "2026-09-29T14:58:18.559830+00:00",
+    "elapsed_seconds": 0.0,
+    "config_file": "config.yaml",
+    "total_discovered": 30,
+    "total_enriched": 30,
+    "total_scored": 30,
+    "total_valid": 30,
+    "total_review_queue": 0,
+    "llm_used_count": 0,
+    "llm_fallback_count": 0,
+    "skip_llm": true,
+    "scoring_thresholds": {
+      "high_threshold": 70,
+      "medium_threshold": 50
+    },
+    "targeting": {
+      "industries": [
+        "financial services",
+        "banking",
+        "fintech",
+        "technology",
+        "information technology",
+        "it services",
+        "telecommunications",
+        "healthcare",
+        "hospitals",
+        "logistics",
+        "transportation",
+        "hospitality",
+        "operations consulting",
+        "business consulting"
+      ],
+      "geography": [
+        "Kenya",
+        "Nairobi"
+      ],
+      "employee_min": 50,
+      "employee_max": 500
+    }
+  },
+  "leads": [
+    {
+      "company": "FlexPay Technologies",
+      "website": "https://www.flexpay.co.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Fintech company providing retail and mobile payment solutions to merchants and consumers across East Africa.",
+      "exposure_signals": [
+        "digital payments",
+        "merchant financial data",
+        "mobile transactions",
+        "customer PII"
+      ],
+      "operational_signals": [
+        "multi-merchant network",
+        "East Africa expansion"
+      ],
+      "regulatory_signals": [
+        "CBK oversight likely",
+        "payment processing regulation"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 20,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 70
+      },
+      "opportunity_score": 70,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): digital payments, merchant financial data, mobile transactions.",
+        "Operating under regulatory framework(s): CBK oversight likely, payment processing regulation.",
+        "Operational complexity noted: multi-merchant network."
+      ],
+      "outreach_message": "Hi [Contact], I came across FlexPay Technologies and noticed your work in Financial Services. With digital payments, merchant financial data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for FlexPay Technologies",
+          "url": "https://www.flexpay.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for FlexPay Technologies",
+          "url": "https://www.linkedin.com/company/flexpay-technologies/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://www.flexpay.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: merchant financial data",
+          "url": "https://www.flexpay.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: mobile transactions",
+          "url": "https://www.flexpay.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: customer PII",
+          "url": "https://www.flexpay.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK oversight likely",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: payment processing regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Jumia Kenya",
+      "website": "https://www.jumia.co.ke/",
+      "industry": "Technology, Information and Internet",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "Leading e-commerce marketplace operating in Kenya with digital commerce, logistics, and payment verticals.",
+      "exposure_signals": [
+        "large digital customer footprint",
+        "online payment processing",
+        "customer PII at scale",
+        "e-commerce transactions"
+      ],
+      "operational_signals": [
+        "nationwide logistics",
+        "multi-category marketplace",
+        "third-party seller data"
+      ],
+      "regulatory_signals": [
+        "data protection regulation",
+        "payment processing"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 18,
+        "exposure_score": 20,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 78
+      },
+      "opportunity_score": 78,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 78/100 (High Priority). Size band: 201-500 (+20 pts). Sector risk 'Technology, Information and Internet' (+18 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): large digital customer footprint, online payment processing, customer PII at scale.",
+        "Operating under regulatory framework(s): data protection regulation, payment processing.",
+        "Operational complexity noted: nationwide logistics."
+      ],
+      "outreach_message": "Hi [Contact], I came across Jumia Kenya and noticed your work in Technology, Information and Internet. With large digital customer footprint, online payment processing, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Jumia Kenya",
+          "url": "https://www.jumia.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Jumia Kenya",
+          "url": "https://www.linkedin.com/company/jumia-kenya/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: large digital customer footprint",
+          "url": "https://www.jumia.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: online payment processing",
+          "url": "https://www.jumia.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: customer PII at scale",
+          "url": "https://www.jumia.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: e-commerce transactions",
+          "url": "https://www.jumia.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: payment processing",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "MFS Technologies Limited",
+      "website": "https://www.mfs.co.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Financial technology company offering payments, digital lending, e-KYC, and data analytics for banks and financial institutions.",
+      "exposure_signals": [
+        "regulated digital finance",
+        "sensitive customer data",
+        "e-KYC identity data",
+        "lending platform",
+        "bank API integrations"
+      ],
+      "operational_signals": [
+        "serves multiple banks",
+        "cross-institution data flows"
+      ],
+      "regulatory_signals": [
+        "CBK regulated",
+        "data protection act applicable",
+        "KYC/AML requirements"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 25,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 75
+      },
+      "opportunity_score": 75,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 75/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+25 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 5 cybersecurity-relevant exposure signal(s): regulated digital finance, sensitive customer data, e-KYC identity data.",
+        "Operating under regulatory framework(s): CBK regulated, data protection act applicable.",
+        "Operational complexity noted: serves multiple banks."
+      ],
+      "outreach_message": "Hi [Contact], I came across MFS Technologies Limited and noticed your work in Financial Services. With regulated digital finance, sensitive customer data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for MFS Technologies Limited",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for MFS Technologies Limited",
+          "url": "https://www.linkedin.com/company/mfs-technologies-limited/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: regulated digital finance",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: sensitive customer data",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: e-KYC identity data",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: lending platform",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: bank API integrations",
+          "url": "https://www.mfs.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK regulated",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection act applicable",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: KYC/AML requirements",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "LendPlus Kenya",
+      "website": "https://lendplus.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Digital lending platform providing mobile loans and credit services to underserved individuals and businesses.",
+      "exposure_signals": [
+        "mobile lending",
+        "client financial verification",
+        "loan applicant PII",
+        "credit scoring data"
+      ],
+      "operational_signals": [
+        "mobile-first operations",
+        "digital onboarding"
+      ],
+      "regulatory_signals": [
+        "CBK digital credit provider licensing",
+        "data protection obligations"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 15,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 65
+      },
+      "opportunity_score": 65,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 65/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+15 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): mobile lending, client financial verification, loan applicant PII.",
+        "Operating under regulatory framework(s): CBK digital credit provider licensing, data protection obligations.",
+        "Operational complexity noted: mobile-first operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across LendPlus Kenya and noticed your work in Financial Services. With mobile lending, client financial verification, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for LendPlus Kenya",
+          "url": "https://lendplus.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: mobile lending",
+          "url": "https://lendplus.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: client financial verification",
+          "url": "https://lendplus.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: loan applicant PII",
+          "url": "https://lendplus.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: credit scoring data",
+          "url": "https://lendplus.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK digital credit provider licensing",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection obligations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Izwe Kenya",
+      "website": "https://www.izwekenya.com/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Credit provider offering digital and cashless financial services including personal loans and insurance-linked credit.",
+      "exposure_signals": [
+        "financial data",
+        "regulated credit operations",
+        "insurance-linked data",
+        "cashless payment systems"
+      ],
+      "operational_signals": [
+        "branch network",
+        "insurance partner integrations"
+      ],
+      "regulatory_signals": [
+        "CBK credit provider regulation",
+        "IRA Kenya oversight"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 20,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 70
+      },
+      "opportunity_score": 70,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): financial data, regulated credit operations, insurance-linked data.",
+        "Operating under regulatory framework(s): CBK credit provider regulation, IRA Kenya oversight.",
+        "Operational complexity noted: branch network."
+      ],
+      "outreach_message": "Hi [Contact], I came across Izwe Kenya and noticed your work in Financial Services. With financial data, regulated credit operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Izwe Kenya",
+          "url": "https://www.izwekenya.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Izwe Kenya",
+          "url": "https://www.linkedin.com/company/izwe-loans/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://www.izwekenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: regulated credit operations",
+          "url": "https://www.izwekenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: insurance-linked data",
+          "url": "https://www.izwekenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cashless payment systems",
+          "url": "https://www.izwekenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK credit provider regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: IRA Kenya oversight",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Data Integrated Limited (DIL)",
+      "website": "http://www.dataintegrated.co.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Fintech and payment solutions company covering public transport ticketing, POS terminals, and payroll systems.",
+      "exposure_signals": [
+        "payment systems",
+        "payroll data",
+        "POS terminal network",
+        "transit ticketing",
+        "multiple transaction systems"
+      ],
+      "operational_signals": [
+        "public transport infrastructure",
+        "multi-sector deployment"
+      ],
+      "regulatory_signals": [
+        "payment processing regulation",
+        "payroll data obligations"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 60
+      },
+      "opportunity_score": 60,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 60/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 5 cybersecurity-relevant exposure signal(s): payment systems, payroll data, POS terminal network.",
+        "Operating under regulatory framework(s): payment processing regulation, payroll data obligations.",
+        "Operational complexity noted: public transport infrastructure."
+      ],
+      "outreach_message": "Hi [Contact], I came across Data Integrated Limited (DIL) and noticed your work in Financial Services. With payment systems, payroll data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Data Integrated Limited (DIL)",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Data Integrated Limited (DIL)",
+          "url": "https://www.linkedin.com/company/data-integrated-limited/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: payment systems",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: payroll data",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: POS terminal network",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: transit ticketing",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: multiple transaction systems",
+          "url": "http://www.dataintegrated.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: payment processing regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: payroll data obligations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "U&I Microfinance Bank",
+      "website": "https://www.uni-microfinance.co.ke/",
+      "industry": "Banking",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Licensed microfinance bank with multiple branches providing banking services to individuals and SMEs with a digital banking focus.",
+      "exposure_signals": [
+        "licensed banking",
+        "deposit accounts",
+        "digital banking platform",
+        "customer financial records"
+      ],
+      "operational_signals": [
+        "multi-branch environment",
+        "core banking system",
+        "ATM/mobile banking"
+      ],
+      "regulatory_signals": [
+        "CBK licensed microfinance bank",
+        "AML/CFT requirements",
+        "deposit protection"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 3,
+        "total": 63
+      },
+      "opportunity_score": 63,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 63/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Banking' (+25 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): licensed banking, deposit accounts, digital banking platform.",
+        "Operating under regulatory framework(s): CBK licensed microfinance bank, AML/CFT requirements.",
+        "Operational complexity noted: multi-branch environment."
+      ],
+      "outreach_message": "Hi [Contact], I came across U&I Microfinance Bank and noticed your work in Banking. With licensed banking, deposit accounts, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for U&I Microfinance Bank",
+          "url": "https://www.uni-microfinance.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for U&I Microfinance Bank",
+          "url": "https://www.linkedin.com/company/u-i-microfinance-bank/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: licensed banking",
+          "url": "https://www.uni-microfinance.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: deposit accounts",
+          "url": "https://www.uni-microfinance.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: digital banking platform",
+          "url": "https://www.uni-microfinance.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: customer financial records",
+          "url": "https://www.uni-microfinance.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK licensed microfinance bank",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: AML/CFT requirements",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: deposit protection",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Phoenix Capital Limited",
+      "website": "http://phoenixcapitalkenya.co.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Microfinance and SME financing business operating through multiple branches offering credit, savings, and financial advisory.",
+      "exposure_signals": [
+        "financial data",
+        "multi-branch operations",
+        "SME lending records",
+        "savings accounts"
+      ],
+      "operational_signals": [
+        "multi-branch network",
+        "field operations"
+      ],
+      "regulatory_signals": [
+        "CBK oversight",
+        "microfinance regulation"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 70
+      },
+      "opportunity_score": 70,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): financial data, multi-branch operations, SME lending records.",
+        "Operating under regulatory framework(s): CBK oversight, microfinance regulation.",
+        "Operational complexity noted: multi-branch network."
+      ],
+      "outreach_message": "Hi [Contact], I came across Phoenix Capital Limited and noticed your work in Financial Services. With financial data, multi-branch operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Phoenix Capital Limited",
+          "url": "http://phoenixcapitalkenya.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Phoenix Capital Limited",
+          "url": "https://www.linkedin.com/company/phoenix-capital-limited/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "http://phoenixcapitalkenya.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: multi-branch operations",
+          "url": "http://phoenixcapitalkenya.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: SME lending records",
+          "url": "http://phoenixcapitalkenya.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: savings accounts",
+          "url": "http://phoenixcapitalkenya.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CBK oversight",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: microfinance regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Kenya Reinsurance Corporation",
+      "website": "http://www.kenyare.co.ke/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "State-owned reinsurance provider serving multiple regional insurance markets across Africa with investment portfolio management.",
+      "exposure_signals": [
+        "financial records at scale",
+        "regulated industry",
+        "regional operations",
+        "investment data"
+      ],
+      "operational_signals": [
+        "cross-border regional operations",
+        "government-affiliated entity"
+      ],
+      "regulatory_signals": [
+        "IRA Kenya",
+        "NSE listed",
+        "strict regulatory reporting"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 5,
+        "total": 65
+      },
+      "opportunity_score": 65,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 65/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): financial records at scale, regulated industry, regional operations.",
+        "Operating under regulatory framework(s): IRA Kenya, NSE listed.",
+        "Operational complexity noted: cross-border regional operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across Kenya Reinsurance Corporation and noticed your work in Financial Services. With financial records at scale, regulated industry, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Kenya Reinsurance Corporation",
+          "url": "http://www.kenyare.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Kenya Reinsurance Corporation",
+          "url": "https://www.linkedin.com/company/kenya-reinsurance-corporation/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: financial records at scale",
+          "url": "http://www.kenyare.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: regulated industry",
+          "url": "http://www.kenyare.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: regional operations",
+          "url": "http://www.kenyare.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: investment data",
+          "url": "http://www.kenyare.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: IRA Kenya",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: NSE listed",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: strict regulatory reporting",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Escrow Group",
+      "website": "https://escrowgroup.org/",
+      "industry": "Financial Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Pan-African fintech group offering trading, settlement, banking, payments, and investment administration across multiple business units.",
+      "exposure_signals": [
+        "financial transactions",
+        "settlement systems",
+        "multi-business unit data",
+        "investment administration",
+        "cross-border payments"
+      ],
+      "operational_signals": [
+        "Pan-African operations",
+        "multiple subsidiaries",
+        "complex org structure"
+      ],
+      "regulatory_signals": [
+        "multi-jurisdiction regulatory exposure",
+        "financial services regulation"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 70
+      },
+      "opportunity_score": 70,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+10 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 5 cybersecurity-relevant exposure signal(s): financial transactions, settlement systems, multi-business unit data.",
+        "Operating under regulatory framework(s): multi-jurisdiction regulatory exposure, financial services regulation.",
+        "Operational complexity noted: Pan-African operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across Escrow Group and noticed your work in Financial Services. With financial transactions, settlement systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Escrow Group",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Escrow Group",
+          "url": "https://www.linkedin.com/company/escrow-group/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: financial transactions",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: settlement systems",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: multi-business unit data",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: investment administration",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cross-border payments",
+          "url": "https://escrowgroup.org/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: multi-jurisdiction regulatory exposure",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: financial services regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Adrian Kenya",
+      "website": "http://www.adriankenya.com/",
+      "industry": "Telecommunications",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "Engineering and technology solutions company spanning telecom infrastructure, ICT, energy, and EPC project delivery.",
+      "exposure_signals": [
+        "critical telecom infrastructure",
+        "distributed project operations",
+        "ICT systems management",
+        "energy infrastructure"
+      ],
+      "operational_signals": [
+        "distributed field operations",
+        "multi-sector project delivery",
+        "subcontractor management"
+      ],
+      "regulatory_signals": [
+        "CA Kenya telecom regulation",
+        "energy sector compliance"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 20,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 60
+      },
+      "opportunity_score": 60,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Telecommunications' (+20 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): critical telecom infrastructure, distributed project operations, ICT systems management.",
+        "Operating under regulatory framework(s): CA Kenya telecom regulation, energy sector compliance.",
+        "Operational complexity noted: distributed field operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across Adrian Kenya and noticed your work in Telecommunications. With critical telecom infrastructure, distributed project operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CIO / IT Director / Head of Network Security"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Adrian Kenya",
+          "url": "http://www.adriankenya.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Adrian Kenya",
+          "url": "https://www.linkedin.com/company/adrian-kenya/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: critical telecom infrastructure",
+          "url": "http://www.adriankenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: distributed project operations",
+          "url": "http://www.adriankenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: ICT systems management",
+          "url": "http://www.adriankenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: energy infrastructure",
+          "url": "http://www.adriankenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: CA Kenya telecom regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: energy sector compliance",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Bloom Healthcare",
+      "website": "https://bloomkenya.com/",
+      "industry": "Hospitals and Health Care",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Healthcare organization operating specialized medical facilities providing outpatient and diagnostic services.",
+      "exposure_signals": [
+        "patient health information",
+        "medical records",
+        "multiple facilities",
+        "diagnostic data"
+      ],
+      "operational_signals": [
+        "multi-facility operations",
+        "lab and diagnostic systems"
+      ],
+      "regulatory_signals": [
+        "MOH Kenya regulation",
+        "data protection act - health data"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 3,
+        "total": 63
+      },
+      "opportunity_score": 63,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 63/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitals and Health Care' (+25 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): patient health information, medical records, multiple facilities.",
+        "Operating under regulatory framework(s): MOH Kenya regulation, data protection act - health data.",
+        "Operational complexity noted: multi-facility operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across Bloom Healthcare and noticed your work in Hospitals and Health Care. With patient health information, medical records, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Data Protection Lead / CTO"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Bloom Healthcare",
+          "url": "https://bloomkenya.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Bloom Healthcare",
+          "url": "https://www.linkedin.com/company/bloom-healthcare-kenya/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: patient health information",
+          "url": "https://bloomkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: medical records",
+          "url": "https://bloomkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: multiple facilities",
+          "url": "https://bloomkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: diagnostic data",
+          "url": "https://bloomkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: MOH Kenya regulation",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection act - health data",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "MYDAWA",
+      "website": "https://mydawa.com/",
+      "industry": "Healthcare / E-Commerce",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "Digital healthcare and pharmacy e-commerce platform providing online pharmacy, telemedicine, and health product delivery.",
+      "exposure_signals": [
+        "health information",
+        "e-commerce transactions",
+        "payment/customer data",
+        "prescription data",
+        "telemedicine records"
+      ],
+      "operational_signals": [
+        "digital-first healthcare",
+        "nationwide delivery",
+        "API integrations with health providers"
+      ],
+      "regulatory_signals": [
+        "Pharmacy and Poisons Board Kenya",
+        "data protection act - health + payments"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 25,
+        "exposure_score": 25,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 5,
+        "total": 95
+      },
+      "opportunity_score": 95,
+      "priority": "High Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 95/100 (High Priority). Size band: 201-500 (+20 pts). Sector risk 'Healthcare / E-Commerce' (+25 pts). Exposure signals detected: 5 (+25 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 5 cybersecurity-relevant exposure signal(s): health information, e-commerce transactions, payment/customer data.",
+        "Operating under regulatory framework(s): Pharmacy and Poisons Board Kenya, data protection act - health + payments.",
+        "Operational complexity noted: digital-first healthcare."
+      ],
+      "outreach_message": "Hi [Contact], I came across MYDAWA and noticed your work in Healthcare / E-Commerce. With health information, e-commerce transactions, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Data Protection Lead / CTO"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for MYDAWA",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for MYDAWA",
+          "url": "https://www.linkedin.com/company/mydawa/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: health information",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: e-commerce transactions",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: payment/customer data",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: prescription data",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: telemedicine records",
+          "url": "https://mydawa.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: Pharmacy and Poisons Board Kenya",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection act - health + payments",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "E&M Technology House Ltd",
+      "website": "https://www.emtechhouse.co.ke/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "Systems integration and software development company serving banking, government, and public-sector organizations with enterprise solutions.",
+      "exposure_signals": [
+        "banking systems",
+        "government databases",
+        "enterprise integrations",
+        "core banking implementations"
+      ],
+      "operational_signals": [
+        "multi-client managed environments",
+        "public sector access"
+      ],
+      "regulatory_signals": [
+        "banking IT compliance",
+        "government procurement standards"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 15,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 60
+      },
+      "opportunity_score": 60,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): banking systems, government databases, enterprise integrations.",
+        "Operating under regulatory framework(s): banking IT compliance, government procurement standards.",
+        "Operational complexity noted: multi-client managed environments."
+      ],
+      "outreach_message": "Hi [Contact], I came across E&M Technology House Ltd and noticed your work in Information Technology & Services. With banking systems, government databases, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for E&M Technology House Ltd",
+          "url": "https://www.emtechhouse.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for E&M Technology House Ltd",
+          "url": "https://www.linkedin.com/company/em-technology-house/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: banking systems",
+          "url": "https://www.emtechhouse.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: government databases",
+          "url": "https://www.emtechhouse.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: enterprise integrations",
+          "url": "https://www.emtechhouse.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: core banking implementations",
+          "url": "https://www.emtechhouse.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: banking IT compliance",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: government procurement standards",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "ATLANCIS Technologies",
+      "website": "http://www.atlancis.com/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Technology integrator covering cloud infrastructure, cybersecurity, IoT, AI, and enterprise platform implementations.",
+      "exposure_signals": [
+        "cloud infrastructure management",
+        "IoT deployments",
+        "enterprise platforms",
+        "client environment access"
+      ],
+      "operational_signals": [
+        "managed service provider model",
+        "multi-client access"
+      ],
+      "regulatory_signals": [
+        "data protection obligations as MSP"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 55
+      },
+      "opportunity_score": 55,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 55/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): cloud infrastructure management, IoT deployments, enterprise platforms.",
+        "Operating under regulatory framework(s): data protection obligations as MSP.",
+        "Operational complexity noted: managed service provider model."
+      ],
+      "outreach_message": "Hi [Contact], I came across ATLANCIS Technologies and noticed your work in Information Technology & Services. With cloud infrastructure management, IoT deployments, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for ATLANCIS Technologies",
+          "url": "http://www.atlancis.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for ATLANCIS Technologies",
+          "url": "https://www.linkedin.com/company/atlancis-technologies/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure management",
+          "url": "http://www.atlancis.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: IoT deployments",
+          "url": "http://www.atlancis.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: enterprise platforms",
+          "url": "http://www.atlancis.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: client environment access",
+          "url": "http://www.atlancis.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data protection obligations as MSP",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Correlaction",
+      "website": "https://www.correlaction.com/",
+      "industry": "Operations Consulting",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Data-driven operations and analytics consultancy providing decision intelligence and process optimization services.",
+      "exposure_signals": [
+        "data analytics platforms",
+        "client operations data",
+        "regional expansion"
+      ],
+      "operational_signals": [
+        "multi-client data environments",
+        "regional delivery"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 10,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Operations Consulting' (+10 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 3 cybersecurity-relevant exposure signal(s): data analytics platforms, client operations data, regional expansion.",
+        "Operational complexity noted: multi-client data environments."
+      ],
+      "outreach_message": "Hi [Contact], I came across Correlaction and noticed your work in Operations Consulting. With data analytics platforms, client operations data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Correlaction",
+          "url": "https://www.correlaction.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Correlaction",
+          "url": "https://www.linkedin.com/company/correlaction/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: data analytics platforms",
+          "url": "https://www.correlaction.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: client operations data",
+          "url": "https://www.correlaction.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: regional expansion",
+          "url": "https://www.correlaction.com/",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "AI Wakforce",
+      "website": "https://www.aiwakforce.com/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "AI/data workforce provider spanning data annotation, AI automation, and machine learning services for global clients.",
+      "exposure_signals": [
+        "AI/ML workloads",
+        "client datasets",
+        "data annotation pipelines",
+        "global data handling"
+      ],
+      "operational_signals": [
+        "large distributed workforce",
+        "global client data access"
+      ],
+      "regulatory_signals": [
+        "data processing agreements",
+        "international data transfer obligations"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 15,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 60
+      },
+      "opportunity_score": 60,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): AI/ML workloads, client datasets, data annotation pipelines.",
+        "Operating under regulatory framework(s): data processing agreements, international data transfer obligations.",
+        "Operational complexity noted: large distributed workforce."
+      ],
+      "outreach_message": "Hi [Contact], I came across AI Wakforce and noticed your work in Information Technology & Services. With AI/ML workloads, client datasets, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for AI Wakforce",
+          "url": "https://www.aiwakforce.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for AI Wakforce",
+          "url": "https://www.linkedin.com/company/aiwakforce/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: AI/ML workloads",
+          "url": "https://www.aiwakforce.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: client datasets",
+          "url": "https://www.aiwakforce.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: data annotation pipelines",
+          "url": "https://www.aiwakforce.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: global data handling",
+          "url": "https://www.aiwakforce.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data processing agreements",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: international data transfer obligations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Andikka Technologies",
+      "website": "https://andikka.com/",
+      "industry": "Business Consulting and Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "BPO/ITES provider covering technical support, data processing, analytics, and cybersecurity services for regional and global clients.",
+      "exposure_signals": [
+        "BPO customer data",
+        "large distributed workforce",
+        "technical support access to client systems"
+      ],
+      "operational_signals": [
+        "large headcount",
+        "multi-client environment",
+        "24/7 operations"
+      ],
+      "regulatory_signals": [
+        "data processing agreements",
+        "client contractual obligations"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 8,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 53
+      },
+      "opportunity_score": 53,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 53/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Business Consulting and Services' (+8 pts). Exposure signals detected: 3 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 3 cybersecurity-relevant exposure signal(s): BPO customer data, large distributed workforce, technical support access to client systems.",
+        "Operating under regulatory framework(s): data processing agreements, client contractual obligations.",
+        "Operational complexity noted: large headcount."
+      ],
+      "outreach_message": "Hi [Contact], I came across Andikka Technologies and noticed your work in Business Consulting and Services. With BPO customer data, large distributed workforce, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Andikka Technologies",
+          "url": "https://andikka.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Andikka Technologies",
+          "url": "https://www.linkedin.com/company/andikka-technologies/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: BPO customer data",
+          "url": "https://andikka.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: large distributed workforce",
+          "url": "https://andikka.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: technical support access to client systems",
+          "url": "https://andikka.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: data processing agreements",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: client contractual obligations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Blue Wave International Limited",
+      "website": "http://www.bluewave.co.ke/",
+      "industry": "IT Services and IT Consulting",
+      "location": "Nairobi, Kenya",
+      "company_size": "201-500",
+      "description": "Technology company spanning software development, AI, blockchain, and robotics for enterprise and government clients.",
+      "exposure_signals": [
+        "complex software environments",
+        "AI/data systems",
+        "blockchain deployments",
+        "enterprise client access"
+      ],
+      "operational_signals": [
+        "multi-technology stack",
+        "diverse client portfolio"
+      ],
+      "regulatory_signals": [
+        "government client compliance requirements"
+      ],
+      "score_breakdown": {
+        "size_score": 20,
+        "sector_score": 15,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100 (Low Priority). Size band: 201-500 (+20 pts). Sector risk 'IT Services and IT Consulting' (+15 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): complex software environments, AI/data systems, blockchain deployments.",
+        "Operating under regulatory framework(s): government client compliance requirements.",
+        "Operational complexity noted: multi-technology stack."
+      ],
+      "outreach_message": "Hi [Contact], I came across Blue Wave International Limited and noticed your work in IT Services and IT Consulting. With complex software environments, AI/data systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Blue Wave International Limited",
+          "url": "http://www.bluewave.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Blue Wave International Limited",
+          "url": "https://www.linkedin.com/company/blue-wave-international/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: complex software environments",
+          "url": "http://www.bluewave.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: AI/data systems",
+          "url": "http://www.bluewave.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: blockchain deployments",
+          "url": "http://www.bluewave.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: enterprise client access",
+          "url": "http://www.bluewave.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: government client compliance requirements",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Pensoft",
+      "website": "http://www.pensoft.co.ke/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "IT consulting and software company specializing in insurance, pensions, healthcare, and fintech management systems.",
+      "exposure_signals": [
+        "insurance management systems",
+        "pension fund data",
+        "healthcare software",
+        "fintech platform data"
+      ],
+      "operational_signals": [
+        "sensitive sector specialization",
+        "system integration"
+      ],
+      "regulatory_signals": [
+        "insurance regulatory compliance",
+        "RBA pension data obligations"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 15,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 55
+      },
+      "opportunity_score": 55,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 55/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+15 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): insurance management systems, pension fund data, healthcare software.",
+        "Operating under regulatory framework(s): insurance regulatory compliance, RBA pension data obligations.",
+        "Operational complexity noted: sensitive sector specialization."
+      ],
+      "outreach_message": "Hi [Contact], I came across Pensoft and noticed your work in Information Technology & Services. With insurance management systems, pension fund data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Pensoft",
+          "url": "http://www.pensoft.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Pensoft",
+          "url": "https://www.linkedin.com/company/pensoft-kenya/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: insurance management systems",
+          "url": "http://www.pensoft.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: pension fund data",
+          "url": "http://www.pensoft.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: healthcare software",
+          "url": "http://www.pensoft.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: fintech platform data",
+          "url": "http://www.pensoft.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: insurance regulatory compliance",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: RBA pension data obligations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "NIIT Kenya",
+      "website": "http://www.niitkenya.com/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "IT and enterprise skills development provider offering professional certification and talent solutions for corporate clients.",
+      "exposure_signals": [
+        "enterprise systems access",
+        "learner/candidate PII",
+        "corporate training data"
+      ],
+      "operational_signals": [
+        "multi-employer relationships",
+        "certification platform"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 3 cybersecurity-relevant exposure signal(s): enterprise systems access, learner/candidate PII, corporate training data.",
+        "Operational complexity noted: multi-employer relationships."
+      ],
+      "outreach_message": "Hi [Contact], I came across NIIT Kenya and noticed your work in Information Technology & Services. With enterprise systems access, learner/candidate PII, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for NIIT Kenya",
+          "url": "http://www.niitkenya.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for NIIT Kenya",
+          "url": "https://www.linkedin.com/company/niit-kenya/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: enterprise systems access",
+          "url": "http://www.niitkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: learner/candidate PII",
+          "url": "http://www.niitkenya.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: corporate training data",
+          "url": "http://www.niitkenya.com/",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Prince International Distribution",
+      "website": "https://prince-distribution.com/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "ICT product and lubricants distribution company with regional supply-chain and warehousing operations.",
+      "exposure_signals": [
+        "distribution management systems",
+        "warehousing operations",
+        "regional supply-chain data"
+      ],
+      "operational_signals": [
+        "multi-region distribution",
+        "warehouse management",
+        "logistics coordination"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 30
+      },
+      "opportunity_score": 30,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 30/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 3 cybersecurity-relevant exposure signal(s): distribution management systems, warehousing operations, regional supply-chain data.",
+        "Operational complexity noted: multi-region distribution."
+      ],
+      "outreach_message": "Hi [Contact], I came across Prince International Distribution and noticed your work in Information Technology & Services. With distribution management systems, warehousing operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Prince International Distribution",
+          "url": "https://prince-distribution.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: distribution management systems",
+          "url": "https://prince-distribution.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: warehousing operations",
+          "url": "https://prince-distribution.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: regional supply-chain data",
+          "url": "https://prince-distribution.com/",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "HSC Systems Limited",
+      "website": "https://www.hsc.co.ke/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Systems integrator specializing in hotel Wi-Fi, access control, networking, and building management systems.",
+      "exposure_signals": [
+        "connected physical security systems",
+        "hotel network infrastructure",
+        "access control management",
+        "building automation"
+      ],
+      "operational_signals": [
+        "multi-client physical + digital infrastructure",
+        "hospitality sector focus"
+      ],
+      "regulatory_signals": [
+        "guest data obligations via hospitality clients"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): connected physical security systems, hotel network infrastructure, access control management.",
+        "Operating under regulatory framework(s): guest data obligations via hospitality clients.",
+        "Operational complexity noted: multi-client physical + digital infrastructure."
+      ],
+      "outreach_message": "Hi [Contact], I came across HSC Systems Limited and noticed your work in Information Technology & Services. With connected physical security systems, hotel network infrastructure, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for HSC Systems Limited",
+          "url": "https://www.hsc.co.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for HSC Systems Limited",
+          "url": "https://www.linkedin.com/company/hsc-systems/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: connected physical security systems",
+          "url": "https://www.hsc.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: hotel network infrastructure",
+          "url": "https://www.hsc.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: access control management",
+          "url": "https://www.hsc.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: building automation",
+          "url": "https://www.hsc.co.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: guest data obligations via hospitality clients",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Sight and Sound Computers",
+      "website": "http://www.sightsoundke.com/",
+      "industry": "Information Technology & Services",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "ICT solutions and technology services provider delivering managed IT and enterprise support services.",
+      "exposure_signals": [
+        "managed ICT services",
+        "enterprise client environments",
+        "technical support access"
+      ],
+      "operational_signals": [
+        "managed service model",
+        "multi-client environments"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 15,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 3 cybersecurity-relevant exposure signal(s): managed ICT services, enterprise client environments, technical support access.",
+        "Operational complexity noted: managed service model."
+      ],
+      "outreach_message": "Hi [Contact], I came across Sight and Sound Computers and noticed your work in Information Technology & Services. With managed ICT services, enterprise client environments, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "CTO / Information Security Lead / Head of IT"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Sight and Sound Computers",
+          "url": "http://www.sightsoundke.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Sight and Sound Computers",
+          "url": "https://www.linkedin.com/company/sight-and-sound-computers/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: managed ICT services",
+          "url": "http://www.sightsoundke.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: enterprise client environments",
+          "url": "http://www.sightsoundke.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: technical support access",
+          "url": "http://www.sightsoundke.com/",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Pan Pacific Serviced Suites Nairobi",
+      "website": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+      "industry": "Hospitality",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "International serviced suites brand with meeting rooms, dining, guest services, and corporate event facilities.",
+      "exposure_signals": [
+        "guest data",
+        "hotel Wi-Fi network",
+        "payment systems",
+        "event management systems"
+      ],
+      "operational_signals": [
+        "international brand standards",
+        "corporate guest base"
+      ],
+      "regulatory_signals": [
+        "international data protection standards",
+        "PCI-DSS for payments"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 10,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): guest data, hotel Wi-Fi network, payment systems.",
+        "Operating under regulatory framework(s): international data protection standards, PCI-DSS for payments.",
+        "Operational complexity noted: international brand standards."
+      ],
+      "outreach_message": "Hi [Contact], I came across Pan Pacific Serviced Suites Nairobi and noticed your work in Hospitality. With guest data, hotel Wi-Fi network, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Manager / General Manager"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Pan Pacific Serviced Suites Nairobi",
+          "url": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: guest data",
+          "url": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: hotel Wi-Fi network",
+          "url": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: payment systems",
+          "url": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: event management systems",
+          "url": "https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: international data protection standards",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: PCI-DSS for payments",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Mercure Hotel Nairobi Upperhill",
+      "website": "https://all.accor.com/hotel/9255/index.en.shtml",
+      "industry": "Hospitality",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Accor-branded hotel in Upperhill providing accommodation, conferencing, dining, and business services.",
+      "exposure_signals": [
+        "guest data",
+        "payment systems",
+        "networked hotel systems",
+        "conference room booking"
+      ],
+      "operational_signals": [
+        "international brand compliance",
+        "property management system"
+      ],
+      "regulatory_signals": [
+        "PCI-DSS for payments",
+        "GDPR for international guests"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 10,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): guest data, payment systems, networked hotel systems.",
+        "Operating under regulatory framework(s): PCI-DSS for payments, GDPR for international guests.",
+        "Operational complexity noted: international brand compliance."
+      ],
+      "outreach_message": "Hi [Contact], I came across Mercure Hotel Nairobi Upperhill and noticed your work in Hospitality. With guest data, payment systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Manager / General Manager"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Mercure Hotel Nairobi Upperhill",
+          "url": "https://all.accor.com/hotel/9255/index.en.shtml",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: guest data",
+          "url": "https://all.accor.com/hotel/9255/index.en.shtml",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: payment systems",
+          "url": "https://all.accor.com/hotel/9255/index.en.shtml",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: networked hotel systems",
+          "url": "https://all.accor.com/hotel/9255/index.en.shtml",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: conference room booking",
+          "url": "https://all.accor.com/hotel/9255/index.en.shtml",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: PCI-DSS for payments",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: GDPR for international guests",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Tamarind Tree Hotel Nairobi",
+      "website": "https://www.tamarindtree-hotels.com",
+      "industry": "Hospitality",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Independent hotel brand offering accommodation, conferencing, events, and restaurant services in Nairobi.",
+      "exposure_signals": [
+        "guest PII",
+        "event management data",
+        "payment systems",
+        "restaurant POS"
+      ],
+      "operational_signals": [
+        "multi-venue events",
+        "restaurant operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 10,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): guest PII, event management data, payment systems.",
+        "Operational complexity noted: multi-venue events."
+      ],
+      "outreach_message": "Hi [Contact], I came across Tamarind Tree Hotel Nairobi and noticed your work in Hospitality. With guest PII, event management data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Manager / General Manager"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Tamarind Tree Hotel Nairobi",
+          "url": "https://www.tamarindtree-hotels.com",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: guest PII",
+          "url": "https://www.tamarindtree-hotels.com",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: event management data",
+          "url": "https://www.tamarindtree-hotels.com",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: payment systems",
+          "url": "https://www.tamarindtree-hotels.com",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: restaurant POS",
+          "url": "https://www.tamarindtree-hotels.com",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "The Social House Nairobi",
+      "website": "https://www.thesocialhouse.ke/",
+      "industry": "Hospitality",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Boutique lifestyle hotel with rooms, curated event spaces, multiple restaurant concepts, pool, and gym.",
+      "exposure_signals": [
+        "guest data",
+        "multiple connected services",
+        "F&B POS systems",
+        "event booking data"
+      ],
+      "operational_signals": [
+        "multi-service property",
+        "diverse guest profile"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 10,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 2,
+        "total": 27
+      },
+      "opportunity_score": 27,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 27/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): guest data, multiple connected services, F&B POS systems.",
+        "Operational complexity noted: multi-service property."
+      ],
+      "outreach_message": "Hi [Contact], I came across The Social House Nairobi and noticed your work in Hospitality. With guest data, multiple connected services, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Manager / General Manager"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for The Social House Nairobi",
+          "url": "https://www.thesocialhouse.ke/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for The Social House Nairobi",
+          "url": "https://www.linkedin.com/company/the-social-house-nairobi/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: guest data",
+          "url": "https://www.thesocialhouse.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: multiple connected services",
+          "url": "https://www.thesocialhouse.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: F&B POS systems",
+          "url": "https://www.thesocialhouse.ke/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: event booking data",
+          "url": "https://www.thesocialhouse.ke/",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Syokimau ICD",
+      "website": "https://syokimauicd.com/",
+      "industry": "Transportation, Logistics, Supply Chain and Storage",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Inland container depot adjacent to the SGR Nairobi Terminus, providing container handling, customs, and logistics services.",
+      "exposure_signals": [
+        "cargo management systems",
+        "customs documentation",
+        "logistics operations data",
+        "physical infrastructure"
+      ],
+      "operational_signals": [
+        "critical infrastructure adjacent to SGR",
+        "customs/KRA integration"
+      ],
+      "regulatory_signals": [
+        "KRA customs compliance",
+        "KEBS standards"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 12,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 37
+      },
+      "opportunity_score": 37,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 37/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Transportation, Logistics, Supply Chain and Storage' (+12 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): cargo management systems, customs documentation, logistics operations data.",
+        "Operating under regulatory framework(s): KRA customs compliance, KEBS standards.",
+        "Operational complexity noted: critical infrastructure adjacent to SGR."
+      ],
+      "outreach_message": "Hi [Contact], I came across Syokimau ICD and noticed your work in Transportation, Logistics, Supply Chain and Storage. With cargo management systems, customs documentation, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Technology Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Syokimau ICD",
+          "url": "https://syokimauicd.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Syokimau ICD",
+          "url": "https://www.linkedin.com/company/syokimau-icd/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cargo management systems",
+          "url": "https://syokimauicd.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: customs documentation",
+          "url": "https://syokimauicd.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: logistics operations data",
+          "url": "https://syokimauicd.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: physical infrastructure",
+          "url": "https://syokimauicd.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: KRA customs compliance",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: KEBS standards",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "company": "Delta Handling Services",
+      "website": "http://www.deltahs.com/",
+      "industry": "Transportation, Logistics, Supply Chain and Storage",
+      "location": "Nairobi, Kenya",
+      "company_size": "51-200",
+      "description": "Ground handling and logistics company with operations across multiple African airports and cargo facilities.",
+      "exposure_signals": [
+        "distributed multi-location operations",
+        "cargo data",
+        "aviation/ground handling data",
+        "airline partner integrations"
+      ],
+      "operational_signals": [
+        "multi-country African operations",
+        "aviation sector exposure"
+      ],
+      "regulatory_signals": [
+        "aviation authority compliance",
+        "KCAA regulations"
+      ],
+      "score_breakdown": {
+        "size_score": 15,
+        "sector_score": 12,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 10,
+        "bonus_score": 0,
+        "total": 47
+      },
+      "opportunity_score": 47,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 47/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Transportation, Logistics, Supply Chain and Storage' (+12 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.",
+      "business_observations": [
+        "Identified 4 cybersecurity-relevant exposure signal(s): distributed multi-location operations, cargo data, aviation/ground handling data.",
+        "Operating under regulatory framework(s): aviation authority compliance, KCAA regulations.",
+        "Operational complexity noted: multi-country African operations."
+      ],
+      "outreach_message": "Hi [Contact], I came across Delta Handling Services and noticed your work in Transportation, Logistics, Supply Chain and Storage. With distributed multi-location operations, cargo data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "confidence": "Unknown",
+        "recommended_role": "IT Manager / Operations Technology Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website for Delta Handling Services",
+          "url": "http://www.deltahs.com/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "LinkedIn company profile for Delta Handling Services",
+          "url": "https://www.linkedin.com/company/delta-handling-services/",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: distributed multi-location operations",
+          "url": "http://www.deltahs.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cargo data",
+          "url": "http://www.deltahs.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: aviation/ground handling data",
+          "url": "http://www.deltahs.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: airline partner integrations",
+          "url": "http://www.deltahs.com/",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: aviation authority compliance",
+          "url": "",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Regulatory/compliance context: KCAA regulations",
+          "url": "",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "ok",
+      "llm_used": false,
+      "website_reachable": null
+    }
+  ],
+  "review_queue": []
+}

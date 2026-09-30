@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Lead Intelligence — Cybersecurity Consulting</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+          background: #f6f8fa; color: #24292f; font-size: 13px; }
+  .header { background: #0d1117; color: #e6edf3; padding: 24px 32px; }
+  .header h1 { font-size: 20px; font-weight: 700; }
+  .header .sub { color: #8b949e; font-size: 12px; margin-top: 4px; }
+  .stats { display: flex; gap: 16px; padding: 16px 32px; background: #fff;
+            border-bottom: 1px solid #d0d7de; flex-wrap: wrap; }
+  .stat { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 8px;
+           padding: 12px 20px; text-align: center; min-width: 100px; }
+  .stat .val { font-size: 24px; font-weight: 700; color: #0969da; }
+  .stat .lbl { font-size: 11px; color: #6e7781; margin-top: 2px; }
+  .controls { padding: 12px 32px; background: #fff; border-bottom: 1px solid #d0d7de;
+               display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .controls input { padding: 6px 12px; border: 1px solid #d0d7de; border-radius: 6px;
+                     font-size: 13px; width: 260px; }
+  .controls select { padding: 6px 10px; border: 1px solid #d0d7de; border-radius: 6px; font-size: 13px; }
+  .controls label { font-size: 12px; color: #6e7781; }
+  .table-wrap { padding: 16px 32px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: #fff;
+           border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; }
+  th { background: #f6f8fa; padding: 10px 12px; text-align: left; font-size: 11px;
+        font-weight: 600; color: #6e7781; text-transform: uppercase; letter-spacing: 0.5px;
+        border-bottom: 1px solid #d0d7de; cursor: pointer; user-select: none; white-space: nowrap; }
+  th:hover { background: #e8eaed; }
+  td { padding: 10px 12px; border-bottom: 1px solid #f6f8fa; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f6f8fa; }
+  details summary { list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  .section-title { padding: 16px 32px 8px; font-weight: 700; font-size: 14px; color: #0d1117; }
+  .review-table { margin: 0 32px 32px; background: #fff; border: 1px solid #d0d7de;
+                   border-radius: 8px; overflow: hidden; }
+  .review-table th { background: #ffebe9; color: #cf222e; }
+  .footer { padding: 16px 32px; color: #6e7781; font-size: 11px; border-top: 1px solid #d0d7de; }
+  .hidden { display: none; }
+  @media (max-width: 768px) { .stats { gap: 8px; } .table-wrap { padding: 8px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔐 AI Lead Intelligence &amp; Qualification Engine</h1>
+  <div class="sub">Cybersecurity Consulting Prospects · Generated 2026-09-29T14:58:18.559830+00:00 · 30 leads processed</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="val">30</div><div class="lbl">Total Leads</div></div>
+  <div class="stat"><div class="val" style="color:#1a7f37">7</div><div class="lbl">High Priority</div></div>
+  <div class="stat"><div class="val" style="color:#9a6700">12</div><div class="lbl">Medium Priority</div></div>
+  <div class="stat"><div class="val" style="color:#6e7781">11</div><div class="lbl">Low Priority</div></div>
+  <div class="stat"><div class="val">54.9</div><div class="lbl">Avg Score</div></div>
+  <div class="stat"><div class="val" style="color:#0969da">0</div><div class="lbl">LLM Analysed</div></div>
+  <div class="stat"><div class="val" style="color:#cf222e">0</div><div class="lbl">Review Queue</div></div>
+</div>
+
+<div class="controls">
+  <label>Search:</label>
+  <input type="text" id="search" placeholder="Company, industry, location…" oninput="filterTable()">
+  <label>Priority:</label>
+  <select id="priorityFilter" onchange="filterTable()">
+    <option value="">All priorities</option>
+    <option value="High Priority">High Priority</option>
+    <option value="Medium Priority">Medium Priority</option>
+    <option value="Low Priority">Low Priority</option>
+  </select>
+  <label>Min score:</label>
+  <input type="number" id="minScore" placeholder="0" min="0" max="100" style="width:70px" oninput="filterTable()">
+</div>
+
+<div class="table-wrap">
+<table id="leadsTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">Company ↕</th>
+      <th onclick="sortTable(1)">Industry ↕</th>
+      <th onclick="sortTable(2)">Size ↕</th>
+      <th onclick="sortTable(3)">Score ↕</th>
+      <th onclick="sortTable(4)">Priority ↕</th>
+      <th onclick="sortTable(5)">Status ↕</th>
+      <th>Decision Maker</th>
+      <th>Qualification</th>
+      <th>Outreach</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    
+    <tr class="lead-row" data-priority="High Priority" data-search="flexpay technologies financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.flexpay.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">FlexPay Technologies</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 20 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 70"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:70%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">70</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): digital payments, merchant financial data, mobile transactions.</li><li>Operating under regulatory framework(s): CBK oversight likely, payment processing regulation.</li><li>Operational complexity noted: multi-merchant network.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across FlexPay Technologies and noticed your work in Financial Services. With digital payments, merchant financial data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="jumia kenya technology, information and internet nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.jumia.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Jumia Kenya</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Technology, Information and Internet</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 18 | Exposure: 20 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 78"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:78%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">78</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 78/100 (High Priority). Size band: 201-500 (+20 pts). Sector risk 'Technology, Information and Internet' (+18 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): large digital customer footprint, online payment processing, customer PII at scale.</li><li>Operating under regulatory framework(s): data protection regulation, payment processing.</li><li>Operational complexity noted: nationwide logistics.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Jumia Kenya and noticed your work in Technology, Information and Internet. With large digital customer footprint, online payment processing, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="mfs technologies limited financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.mfs.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">MFS Technologies Limited</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 25 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 75"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:75%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">75</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 75/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+25 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 5 cybersecurity-relevant exposure signal(s): regulated digital finance, sensitive customer data, e-KYC identity data.</li><li>Operating under regulatory framework(s): CBK regulated, data protection act applicable.</li><li>Operational complexity noted: serves multiple banks.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across MFS Technologies Limited and noticed your work in Financial Services. With regulated digital finance, sensitive customer data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 8</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="lendplus kenya financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://lendplus.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">LendPlus Kenya</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 15 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 65"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:65%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">65</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 65/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+15 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): mobile lending, client financial verification, loan applicant PII.</li><li>Operating under regulatory framework(s): CBK digital credit provider licensing, data protection obligations.</li><li>Operational complexity noted: mobile-first operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across LendPlus Kenya and noticed your work in Financial Services. With mobile lending, client financial verification, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 1</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="izwe kenya financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.izwekenya.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Izwe Kenya</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 20 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 70"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:70%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">70</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+20 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): financial data, regulated credit operations, insurance-linked data.</li><li>Operating under regulatory framework(s): CBK credit provider regulation, IRA Kenya oversight.</li><li>Operational complexity noted: branch network.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Izwe Kenya and noticed your work in Financial Services. With financial data, regulated credit operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="data integrated limited (dil) financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.dataintegrated.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Data Integrated Limited (DIL)</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 10 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 60"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:60%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">60</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 60/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 5 cybersecurity-relevant exposure signal(s): payment systems, payroll data, POS terminal network.</li><li>Operating under regulatory framework(s): payment processing regulation, payroll data obligations.</li><li>Operational complexity noted: public transport infrastructure.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Data Integrated Limited (DIL) and noticed your work in Financial Services. With payment systems, payroll data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 7</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="u&i microfinance bank banking nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.uni-microfinance.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">U&I Microfinance Bank</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Banking</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 0 | Complexity: 10 | Regulatory: 10 | Bonus: 3 | TOTAL: 63"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:63%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">63</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 63/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Banking' (+25 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): licensed banking, deposit accounts, digital banking platform.</li><li>Operating under regulatory framework(s): CBK licensed microfinance bank, AML/CFT requirements.</li><li>Operational complexity noted: multi-branch environment.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across U&I Microfinance Bank and noticed your work in Banking. With licensed banking, deposit accounts, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 7</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="phoenix capital limited financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://phoenixcapitalkenya.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Phoenix Capital Limited</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 10 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 70"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:70%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">70</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): financial data, multi-branch operations, SME lending records.</li><li>Operating under regulatory framework(s): CBK oversight, microfinance regulation.</li><li>Operational complexity noted: multi-branch network.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Phoenix Capital Limited and noticed your work in Financial Services. With financial data, multi-branch operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="kenya reinsurance corporation financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.kenyare.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Kenya Reinsurance Corporation</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 0 | Complexity: 10 | Regulatory: 10 | Bonus: 5 | TOTAL: 65"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:65%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">65</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 65/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): financial records at scale, regulated industry, regional operations.</li><li>Operating under regulatory framework(s): IRA Kenya, NSE listed.</li><li>Operational complexity noted: cross-border regional operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Kenya Reinsurance Corporation and noticed your work in Financial Services. With financial records at scale, regulated industry, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 7</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="escrow group financial services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://escrowgroup.org/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Escrow Group</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Financial Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 10 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 70"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:70%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">70</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Information Security Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 70/100 (High Priority). Size band: 51-200 (+15 pts). Sector risk 'Financial Services' (+25 pts). Exposure signals detected: 5 (+10 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 5 cybersecurity-relevant exposure signal(s): financial transactions, settlement systems, multi-business unit data.</li><li>Operating under regulatory framework(s): multi-jurisdiction regulatory exposure, financial services regulation.</li><li>Operational complexity noted: Pan-African operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Escrow Group and noticed your work in Financial Services. With financial transactions, settlement systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 7</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="adrian kenya telecommunications nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.adriankenya.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Adrian Kenya</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Telecommunications</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 20 | Exposure: 0 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 60"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:60%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">60</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CIO / IT Director / Head of Network Security</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Telecommunications' (+20 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): critical telecom infrastructure, distributed project operations, ICT systems management.</li><li>Operating under regulatory framework(s): CA Kenya telecom regulation, energy sector compliance.</li><li>Operational complexity noted: distributed field operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Adrian Kenya and noticed your work in Telecommunications. With critical telecom infrastructure, distributed project operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="bloom healthcare hospitals and health care nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://bloomkenya.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Bloom Healthcare</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Hospitals and Health Care</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 25 | Exposure: 10 | Complexity: 0 | Regulatory: 10 | Bonus: 3 | TOTAL: 63"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:63%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">63</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Data Protection Lead / CTO</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 63/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitals and Health Care' (+25 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): patient health information, medical records, multiple facilities.</li><li>Operating under regulatory framework(s): MOH Kenya regulation, data protection act - health data.</li><li>Operational complexity noted: multi-facility operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Bloom Healthcare and noticed your work in Hospitals and Health Care. With patient health information, medical records, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="High Priority" data-search="mydawa healthcare / e-commerce nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://mydawa.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">MYDAWA</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Healthcare / E-Commerce</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 25 | Exposure: 25 | Complexity: 10 | Regulatory: 10 | Bonus: 5 | TOTAL: 95"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:95%;background:#1a7f37;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#1a7f37;min-width:30px">95</span></div></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">High Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Data Protection Lead / CTO</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 95/100 (High Priority). Size band: 201-500 (+20 pts). Sector risk 'Healthcare / E-Commerce' (+25 pts). Exposure signals detected: 5 (+25 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 5 cybersecurity-relevant exposure signal(s): health information, e-commerce transactions, payment/customer data.</li><li>Operating under regulatory framework(s): Pharmacy and Poisons Board Kenya, data protection act - health + payments.</li><li>Operational complexity noted: digital-first healthcare.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across MYDAWA and noticed your work in Healthcare / E-Commerce. With health information, e-commerce transactions, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 7</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="e&m technology house ltd information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.emtechhouse.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">E&M Technology House Ltd</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 15 | Exposure: 5 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 60"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:60%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">60</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): banking systems, government databases, enterprise integrations.</li><li>Operating under regulatory framework(s): banking IT compliance, government procurement standards.</li><li>Operational complexity noted: multi-client managed environments.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across E&M Technology House Ltd and noticed your work in Information Technology & Services. With banking systems, government databases, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="atlancis technologies information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.atlancis.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">ATLANCIS Technologies</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 5 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 55"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:55%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">55</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 55/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): cloud infrastructure management, IoT deployments, enterprise platforms.</li><li>Operating under regulatory framework(s): data protection obligations as MSP.</li><li>Operational complexity noted: managed service provider model.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across ATLANCIS Technologies and noticed your work in Information Technology & Services. With cloud infrastructure management, IoT deployments, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 5</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="correlaction operations consulting nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.correlaction.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Correlaction</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Operations Consulting</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 10 | Exposure: 0 | Complexity: 10 | Regulatory: 0 | Bonus: 0 | TOTAL: 35"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:35%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">35</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Operations Consulting' (+10 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 3 cybersecurity-relevant exposure signal(s): data analytics platforms, client operations data, regional expansion.</li><li>Operational complexity noted: multi-client data environments.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Correlaction and noticed your work in Operations Consulting. With data analytics platforms, client operations data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 3</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="ai wakforce information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.aiwakforce.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">AI Wakforce</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 15 | Exposure: 5 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 60"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:60%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">60</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 60/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): AI/ML workloads, client datasets, data annotation pipelines.</li><li>Operating under regulatory framework(s): data processing agreements, international data transfer obligations.</li><li>Operational complexity noted: large distributed workforce.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across AI Wakforce and noticed your work in Information Technology & Services. With AI/ML workloads, client datasets, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="andikka technologies business consulting and services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://andikka.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Andikka Technologies</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Business Consulting and Services</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 8 | Exposure: 5 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 53"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:53%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">53</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 53/100 (Medium Priority). Size band: 201-500 (+20 pts). Sector risk 'Business Consulting and Services' (+8 pts). Exposure signals detected: 3 (+5 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 3 cybersecurity-relevant exposure signal(s): BPO customer data, large distributed workforce, technical support access to client systems.</li><li>Operating under regulatory framework(s): data processing agreements, client contractual obligations.</li><li>Operational complexity noted: large headcount.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Andikka Technologies and noticed your work in Business Consulting and Services. With BPO customer data, large distributed workforce, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 5</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="blue wave international limited it services and it consulting nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.bluewave.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Blue Wave International Limited</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">IT Services and IT Consulting</td>
+      <td style="text-align:center">201-500</td>
+      <td title="Size: 20 | Sector: 15 | Exposure: 0 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 45"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:45%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">45</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 45/100 (Low Priority). Size band: 201-500 (+20 pts). Sector risk 'IT Services and IT Consulting' (+15 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): complex software environments, AI/data systems, blockchain deployments.</li><li>Operating under regulatory framework(s): government client compliance requirements.</li><li>Operational complexity noted: multi-technology stack.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Blue Wave International Limited and noticed your work in IT Services and IT Consulting. With complex software environments, AI/data systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 5</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="pensoft information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.pensoft.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Pensoft</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 15 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 55"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:55%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">55</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 55/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+15 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): insurance management systems, pension fund data, healthcare software.</li><li>Operating under regulatory framework(s): insurance regulatory compliance, RBA pension data obligations.</li><li>Operational complexity noted: sensitive sector specialization.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Pensoft and noticed your work in Information Technology & Services. With insurance management systems, pension fund data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="niit kenya information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.niitkenya.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">NIIT Kenya</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 5 | Complexity: 0 | Regulatory: 0 | Bonus: 0 | TOTAL: 35"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:35%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">35</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 3 cybersecurity-relevant exposure signal(s): enterprise systems access, learner/candidate PII, corporate training data.</li><li>Operational complexity noted: multi-employer relationships.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across NIIT Kenya and noticed your work in Information Technology & Services. With enterprise systems access, learner/candidate PII, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 3</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="prince international distribution information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://prince-distribution.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Prince International Distribution</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 0 | Complexity: 0 | Regulatory: 0 | Bonus: 0 | TOTAL: 30"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:30%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">30</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 30/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 3 cybersecurity-relevant exposure signal(s): distribution management systems, warehousing operations, regional supply-chain data.</li><li>Operational complexity noted: multi-region distribution.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Prince International Distribution and noticed your work in Information Technology & Services. With distribution management systems, warehousing operations, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 1</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 3</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Medium Priority" data-search="hsc systems limited information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.hsc.co.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">HSC Systems Limited</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 0 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 50"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:50%;background:#9a6700;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#9a6700;min-width:30px">50</span></div></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Medium Priority</span></td>
+      <td><span style="background:#dafbe1;color:#1a7f37;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Qualified</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 50/100 (Medium Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): connected physical security systems, hotel network infrastructure, access control management.</li><li>Operating under regulatory framework(s): guest data obligations via hospitality clients.</li><li>Operational complexity noted: multi-client physical + digital infrastructure.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across HSC Systems Limited and noticed your work in Information Technology & Services. With connected physical security systems, hotel network infrastructure, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 5</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="sight and sound computers information technology & services nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.sightsoundke.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Sight and Sound Computers</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Information Technology & Services</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 15 | Exposure: 0 | Complexity: 10 | Regulatory: 0 | Bonus: 0 | TOTAL: 40"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:40%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">40</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">CTO / Information Security Lead / Head of IT</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Information Technology & Services' (+15 pts). Exposure signals detected: 3 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 3 cybersecurity-relevant exposure signal(s): managed ICT services, enterprise client environments, technical support access.</li><li>Operational complexity noted: managed service model.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Sight and Sound Computers and noticed your work in Information Technology & Services. With managed ICT services, enterprise client environments, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 3</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="pan pacific serviced suites nairobi hospitality nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.panpacific.com/en/serviced-suites/pp-ss-nairobi.html" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Pan Pacific Serviced Suites Nairobi</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Hospitality</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 10 | Exposure: 5 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 40"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:40%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">40</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Manager / General Manager</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): guest data, hotel Wi-Fi network, payment systems.</li><li>Operating under regulatory framework(s): international data protection standards, PCI-DSS for payments.</li><li>Operational complexity noted: international brand standards.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Pan Pacific Serviced Suites Nairobi and noticed your work in Hospitality. With guest data, hotel Wi-Fi network, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 1</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="mercure hotel nairobi upperhill hospitality nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://all.accor.com/hotel/9255/index.en.shtml" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Mercure Hotel Nairobi Upperhill</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Hospitality</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 10 | Exposure: 5 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 40"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:40%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">40</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Manager / General Manager</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 40/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+5 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): guest data, payment systems, networked hotel systems.</li><li>Operating under regulatory framework(s): PCI-DSS for payments, GDPR for international guests.</li><li>Operational complexity noted: international brand compliance.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Mercure Hotel Nairobi Upperhill and noticed your work in Hospitality. With guest data, payment systems, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 1</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="tamarind tree hotel nairobi hospitality nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.tamarindtree-hotels.com" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Tamarind Tree Hotel Nairobi</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Hospitality</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 10 | Exposure: 10 | Complexity: 0 | Regulatory: 0 | Bonus: 0 | TOTAL: 35"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:35%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">35</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Manager / General Manager</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 35/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+10 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): guest PII, event management data, payment systems.</li><li>Operational complexity noted: multi-venue events.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Tamarind Tree Hotel Nairobi and noticed your work in Hospitality. With guest PII, event management data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 1</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 4</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="the social house nairobi hospitality nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://www.thesocialhouse.ke/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">The Social House Nairobi</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Hospitality</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 10 | Exposure: 0 | Complexity: 0 | Regulatory: 0 | Bonus: 2 | TOTAL: 27"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:27%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">27</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Manager / General Manager</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 27/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Hospitality' (+10 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +0 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): guest data, multiple connected services, F&B POS systems.</li><li>Operational complexity noted: multi-service property.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across The Social House Nairobi and noticed your work in Hospitality. With guest data, multiple connected services, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 4</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="syokimau icd transportation, logistics, supply chain and storage nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="https://syokimauicd.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Syokimau ICD</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Transportation, Logistics, Supply Chain and Storage</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 12 | Exposure: 0 | Complexity: 0 | Regulatory: 10 | Bonus: 0 | TOTAL: 37"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:37%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">37</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Technology Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 37/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Transportation, Logistics, Supply Chain and Storage' (+12 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +0 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): cargo management systems, customs documentation, logistics operations data.</li><li>Operating under regulatory framework(s): KRA customs compliance, KEBS standards.</li><li>Operational complexity noted: critical infrastructure adjacent to SGR.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Syokimau ICD and noticed your work in Transportation, Logistics, Supply Chain and Storage. With cargo management systems, customs documentation, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+
+    <tr class="lead-row" data-priority="Low Priority" data-search="delta handling services transportation, logistics, supply chain and storage nairobi, kenya">
+      <td style="font-weight:600;color:#0969da">
+        <a href="http://www.deltahs.com/" target="_blank" rel="noopener" style="color:#0969da;text-decoration:none">Delta Handling Services</a>
+        <div style="font-size:10px;color:#6e7781;margin-top:2px">Nairobi, Kenya —</div>
+      </td>
+      <td style="font-size:12px;color:#24292f">Transportation, Logistics, Supply Chain and Storage</td>
+      <td style="text-align:center">51-200</td>
+      <td title="Size: 15 | Sector: 12 | Exposure: 0 | Complexity: 10 | Regulatory: 10 | Bonus: 0 | TOTAL: 47"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#e8eaed;border-radius:4px;height:8px"><div style="width:47%;background:#6e7781;height:8px;border-radius:4px"></div></div><span style="font-weight:700;color:#6e7781;min-width:30px">47</span></div></td>
+      <td><span style="background:#f6f8fa;color:#6e7781;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Low Priority</span></td>
+      <td><span style="background:#fef3c7;color:#9a6700;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;white-space:nowrap">Needs Review</span></td>
+      <td style="font-size:11px;max-width:200px">
+        <div style="font-weight:600">Not verified</div>
+        <div style="color:#6e7781">IT Manager / Operations Technology Lead</div>
+        <div style="font-size:10px;color:#9a6700">Unknown</div>
+      </td>
+      <td>
+        <details>
+          <summary style="cursor:pointer;font-size:11px;color:#0969da">View explanation</summary>
+          <div style="font-size:11px;margin-top:4px;color:#24292f">Deterministic score: 47/100 (Low Priority). Size band: 51-200 (+15 pts). Sector risk 'Transportation, Logistics, Supply Chain and Storage' (+12 pts). Exposure signals detected: 4 (+0 pts). Operational complexity: +10 pts. Regulatory sensitivity: +10 pts.</div>
+          <ul style="font-size:11px;margin:4px 0 0 0;padding-left:16px"><li>Identified 4 cybersecurity-relevant exposure signal(s): distributed multi-location operations, cargo data, aviation/ground handling data.</li><li>Operating under regulatory framework(s): aviation authority compliance, KCAA regulations.</li><li>Operational complexity noted: multi-country African operations.</li></ul>
+        </details>
+      </td>
+      <td style="font-size:11px;max-width:250px">
+        <details>
+          <summary style="cursor:pointer;color:#0969da;font-size:11px">View message</summary>
+          <div style="font-size:11px;margin-top:4px;background:#f6f8fa;padding:8px;border-radius:4px;border-left:3px solid #0969da">Hi [Contact], I came across Delta Handling Services and noticed your work in Transportation, Logistics, Supply Chain and Storage. With distributed multi-location operations, cargo data, security readiness is often a priority for organisations at your stage. Would a brief conversation about how we help similar companies be worthwhile?</div>
+        </details>
+      </td>
+      <td style="font-size:10px"><span style="background:#dafbe1;color:#1a7f37;padding:1px 6px;border-radius:10px;font-size:10px">Verified: 2</span> <span style="background:#fef3c7;color:#9a6700;padding:1px 6px;border-radius:10px;font-size:10px">Inferred: 6</span><div style="margin-top:2px"><span style="color:#6e7781;font-size:10px">Deterministic</span></div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div class="footer">
+  <strong>Data reliability:</strong> All company information sourced from public profiles and websites.
+  Evidence is tagged Verified / Inferred / Unknown. Opportunity signals are prospecting hypotheses —
+  not findings that a company has a security weakness. Decision-maker names marked "Not verified" were
+  not confirmed in public sources. · Pipeline: config.yaml ·
+  Scoring: fully deterministic (no LLM) · Outreach: deterministic stub
+</div>
+
+<script>
+let sortDir = {};
+
+function filterTable() {
+  const search = document.getElementById("search").value.toLowerCase();
+  const priority = document.getElementById("priorityFilter").value;
+  const minScore = parseInt(document.getElementById("minScore").value) || 0;
+  const rows = document.querySelectorAll("#tableBody .lead-row");
+  rows.forEach(row => {
+    const matchSearch = !search || row.dataset.search.includes(search);
+    const matchPriority = !priority || row.dataset.priority === priority;
+    const scoreEl = row.querySelector("td:nth-child(4) span[style*='font-weight:700']");
+    const score = scoreEl ? parseInt(scoreEl.textContent) : 0;
+    const matchScore = score >= minScore;
+    row.classList.toggle("hidden", !(matchSearch && matchPriority && matchScore));
+  });
+}
+
+function sortTable(col) {
+  const tbody = document.getElementById("tableBody");
+  const rows = Array.from(tbody.querySelectorAll(".lead-row"));
+  sortDir[col] = !sortDir[col];
+  rows.sort((a, b) => {
+    const aVal = a.querySelectorAll("td")[col]?.textContent.trim() || "";
+    const bVal = b.querySelectorAll("td")[col]?.textContent.trim() || "";
+    const aNum = parseFloat(aVal); const bNum = parseFloat(bVal);
+    if (!isNaN(aNum) && !isNaN(bNum)) return sortDir[col] ? aNum - bNum : bNum - aNum;
+    return sortDir[col] ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+</script>
+</body>
+</html>

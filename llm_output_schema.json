@@ -1,0 +1,19 @@
+{
+  "company": "string",
+  "industry": "string",
+  "company_size": "string",
+  "qualification_status": "Qualified | Needs Review | Disqualified",
+  "opportunity_score": "integer 0-100",
+  "priority": "High Priority | Medium Priority | Low Priority",
+  "qualification_explanation": "string",
+  "relevant_business_observations": ["string"],
+  "decision_maker": {
+    "name": "string or Not verified",
+    "title": "string",
+    "confidence": "Verified | Inferred | Unknown"
+  },
+  "outreach_recommendation": "string",
+  "source_evidence": [
+    {"claim": "string", "url": "string", "evidence_status": "Verified | Inferred | Unknown"}
+  ]
+}

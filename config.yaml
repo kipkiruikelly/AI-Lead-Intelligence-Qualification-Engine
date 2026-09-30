@@ -1,0 +1,86 @@
+# ═══════════════════════════════════════════════════════════════
+#  AI Lead Intelligence & Qualification Engine — Configuration
+#  Modify this file to retarget the pipeline for a different
+#  business scenario without changing any code.
+# ═══════════════════════════════════════════════════════════════
+
+# ── Target criteria ────────────────────────────────────────────
+# These filters are applied in discoverer.py (Step 1).
+# The pipeline will only process companies that match ALL criteria.
+target:
+  # Industries to include — case-insensitive partial match
+  # Change these to retarget (e.g. retail, manufacturing, education)
+  industries:
+    - financial services
+    - banking
+    - fintech
+    - technology
+    - information technology
+    - it services
+    - telecommunications
+    - healthcare
+    - hospitals
+    - logistics
+    - transportation
+    - hospitality
+    - operations consulting
+    - business consulting
+
+  # Geographic filter — case-insensitive substring match on location field
+  # Example: ["United States", "New York"] or ["UK", "London"]
+  geography:
+    - Kenya
+    - Nairobi
+
+  # Employee count range — companies with bands overlapping this range are included
+  employee_min: 50
+  employee_max: 500
+
+# ── Scoring thresholds ─────────────────────────────────────────
+# These thresholds determine priority and qualification status.
+# Scoring formula is in pipeline/scorer.py.
+scoring:
+  high_threshold: 70    # >= 70 → High Priority / Qualified
+  medium_threshold: 50  # >= 50 → Medium Priority / Qualified
+                        #  < 50 → Low Priority / Needs Review
+
+# ── LLM configuration ─────────────────────────────────────────
+llm:
+  enabled: true                      # set false to always use deterministic stubs
+  provider: gemini                   # "gemini" | "openai"
+  gemini_model: gemini-2.0-flash     # fast, capable, cost-effective
+  openai_model: gpt-4o-mini          # fallback if no Gemini key
+  # API keys are read from environment variables:
+  #   GEMINI_API_KEY  (preferred)
+  #   OPENAI_API_KEY  (fallback)
+
+# ── Retry configuration ────────────────────────────────────────
+retry:
+  max_attempts: 3          # LLM call retries before fallback
+  backoff_seconds: [2, 5, 10]
+
+# ── Output configuration ───────────────────────────────────────
+output:
+  directory: output        # relative to project root
+  formats:
+    - csv
+    - json
+    - html
+
+# ── Enrichment configuration ───────────────────────────────────
+enrichment:
+  website_check_timeout: 5     # seconds for HTTP HEAD request
+  skip_website_check: false    # set true to skip (faster, offline)
+
+# ═══════════════════════════════════════════════════════════════
+#  PRODUCTION NOTES:
+#  To retarget for a different business scenario:
+#  1. Update target.industries
+#  2. Update target.geography
+#  3. Adjust target.employee_min / employee_max
+#  4. Adjust scoring.high_threshold / medium_threshold
+#  5. Replace data/seed_companies.json with new discovery data
+#
+#  Everything else (scoring logic, LLM prompts, validation,
+#  output formats) adapts automatically.
+# ═══════════════════════════════════════════════════════════════
