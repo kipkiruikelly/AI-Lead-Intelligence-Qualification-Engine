@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 import urllib.parse
 from datetime import datetime, timezone
 from typing import Any, Dict, List
@@ -57,7 +58,6 @@ class WebSearchProvider(DiscoveryProvider):
 
                 for a in soup.find_all("a", class_="result__url"):
                     href = a.get("href", "").strip()
-                    # Parse real destination from DDG redirect wrapper if present
                     if "uddg=" in href:
                         match = re.search(r"uddg=([^&]+)", href)
                         if match:
@@ -69,7 +69,6 @@ class WebSearchProvider(DiscoveryProvider):
                     if href.startswith(("http://", "https://")):
                         parsed = urllib.parse.urlparse(href)
                         domain = parsed.netloc.replace("www.", "").split(":")[0]
-                        # Exclude generic directories / search engine links
                         if domain and not any(x in domain for x in ["duckduckgo.com", "bing.com", "google.com", "wikipedia.org", "youtube.com", "facebook.com", "linkedin.com/search"]):
                             company_name = domain.split(".")[0].replace("-", " ").title()
                             results.append({
@@ -95,6 +94,7 @@ class WebSearchProvider(DiscoveryProvider):
                 break
             logger.debug("Executing live search query: '%s'", q)
             raw_results = self._execute_search(q)
+            time.sleep(0.3)  # Gentle delay to respect rate limits
 
             for res in raw_results:
                 domain = res["website"]
