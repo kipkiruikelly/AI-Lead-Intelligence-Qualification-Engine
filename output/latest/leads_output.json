@@ -1,0 +1,1232 @@
+{
+  "run_metadata": {
+    "run_id": "run_20260930_125633_ce93",
+    "run_timestamp": "2026-09-30T12:57:15.210319+00:00",
+    "completed_at": "2026-09-30T12:57:15.210327+00:00",
+    "elapsed_seconds": 41.94,
+    "mode": "live",
+    "discovery_provider": "web_search",
+    "total_discovered": 18,
+    "total_valid": 18,
+    "total_review_queue": 0,
+    "llm_used_count": 0,
+    "skip_llm": true
+  },
+  "leads": [
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Fsdkenya",
+      "website": "https://fsdkenya.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.fsdkenya.org/category/thematic-areas/digital-finance/",
+        "discovered_at": "2026-09-30T12:56:34.933686+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Creatingvaluethroughinclusivefinance | Financial Sector Deepening Kenya (FSD Kenya) is an independent trust dedicated to the achievement of a financial system that delivers value for a green and inclusive digital economy while improving financial health and capability for women and micro and small enterprises (MSEs). | Key news, views, events, blogs and publications of note from FSD Kenya's work",
+      "exposure_signals": [
+        "health records",
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Fsdkenya operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Financial Sector Deepening Kenya (FSD Kenya) - Creating value through inclusive finance",
+          "url": "https://fsdkenya.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:56:53.929565+00:00",
+          "evidence_text": "Creatingvaluethroughinclusivefinance | Financial Sector Deepening Kenya (FSD Kenya) is an independent trust dedicated to the achievement of a financial system that delivers value for a green and inclusive digital economy while improving financial health and capability for women and micro and small e",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: health records",
+          "url": "https://fsdkenya.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:53.929565+00:00",
+          "evidence_text": "Matched in page snippet: Creatingvaluethroughinclusivefinance | Financial Sector Deepening Kenya (FSD Kenya) is an independent trust dedicated to the achievement of a financia",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://fsdkenya.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:53.929565+00:00",
+          "evidence_text": "Matched in page snippet: Creatingvaluethroughinclusivefinance | Financial Sector Deepening Kenya (FSD Kenya) is an independent trust dedicated to the achievement of a financia",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Pesamarket",
+      "website": "https://pesamarket.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://pesamarket.com/en/blog/digital-banking-kenya-2025",
+        "discovered_at": "2026-09-30T12:56:34.933697+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Compare 240+ loans & credit cards from Kenya's top banks. Best rates from 12%. Free comparison tool with instant approval options. 100% unbiased.",
+      "exposure_signals": [
+        "digital payments",
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Pesamarket operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Compare 240+ Loans & Cards Kenya 2026 | PesaMarket",
+          "url": "https://pesamarket.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:56:55.817440+00:00",
+          "evidence_text": "Compare 240+ loans & credit cards from Kenya's top banks. Best rates from 12%. Free comparison tool with instant approval options. 100% unbiased.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://pesamarket.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:55.817440+00:00",
+          "evidence_text": "Matched in page snippet: Compare 240+ loans & credit cards from Kenya's top banks. Best rates from 12%. Free comparison tool with instant approval options. 100% unbiased.",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://pesamarket.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:55.817440+00:00",
+          "evidence_text": "Matched in page snippet: Compare 240+ loans & credit cards from Kenya's top banks. Best rates from 12%. Free comparison tool with instant approval options. 100% unbiased.",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Uniathenaprods3",
+      "website": "https://uniathenaprods3.uniathena.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://uniathenaprods3.uniathena.com/s3fs-public/2024-08/URJ0824006_0.pdf",
+        "discovered_at": "2026-09-30T12:56:34.933700+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "HTTP error 403",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Uniathenaprods3 operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Uniathenaprods3",
+          "url": "https://uniathenaprods3.uniathena.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:56:56.962711+00:00",
+          "evidence_text": "HTTP error 403",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": false
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Allafripreneurs",
+      "website": "https://allafripreneurs.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://allafripreneurs.org/east-africa/kenya/digital-financial-services-in-kenya-how-mobile-money-is-reshaping-business-and-opportunity/",
+        "discovered_at": "2026-09-30T12:56:34.933702+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "AAE is a leading Pan-African non-profit organization dedicated to empowering high-potential entrepreneurs to drive sustainable transformation",
+      "exposure_signals": [
+        "cloud infrastructure"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Allafripreneurs operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: AllAfripreneurs - allAfripreneurs - Empowering high potential entrepreneurs",
+          "url": "https://allafripreneurs.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:56:58.105799+00:00",
+          "evidence_text": "AAE is a leading Pan-African non-profit organization dedicated to empowering high-potential entrepreneurs to drive sustainable transformation",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://allafripreneurs.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:58.105799+00:00",
+          "evidence_text": "Matched in page snippet: AAE is a leading Pan-African non-profit organization dedicated to empowering high-potential entrepreneurs to drive sustainable transformation",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Sdk",
+      "website": "https://sdk.finance",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://sdk.finance/blog/fintech-kenya-2025-landscape-overview-growth-drivers-and-barriers/",
+        "discovered_at": "2026-09-30T12:56:34.933704+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Launch products that move money or modernise the systems behind them with SDK.finance. Explore our transaction platform and standalone general ledger.",
+      "exposure_signals": [
+        "digital payments",
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Sdk operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: White-Label FinTech & Payment Software | SDK.finance",
+          "url": "https://sdk.finance",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:56:58.850325+00:00",
+          "evidence_text": "Launch products that move money or modernise the systems behind them with SDK.finance. Explore our transaction platform and standalone general ledger.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://sdk.finance",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:58.850325+00:00",
+          "evidence_text": "Matched in page snippet: Launch products that move money or modernise the systems behind them with SDK.finance. Explore our transaction platform and standalone general ledger.",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://sdk.finance",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:56:58.850325+00:00",
+          "evidence_text": "Matched in page snippet: Launch products that move money or modernise the systems behind them with SDK.finance. Explore our transaction platform and standalone general ledger.",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Kenresearch",
+      "website": "https://kenresearch.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.kenresearch.com/kenya-digital-banking-and-fintech-platforms-market",
+        "discovered_at": "2026-09-30T12:56:34.933706+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Ken Research delivers consulting-first market intelligence with 200,000+ reports. Strategy, M&A, IPO advisory & organizational transformation across 100+ industries.",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Kenresearch operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Global Business Consulting & Market Intelligence firm | Ken Research",
+          "url": "https://kenresearch.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:00.108117+00:00",
+          "evidence_text": "Ken Research delivers consulting-first market intelligence with 200,000+ reports. Strategy, M&A, IPO advisory & organizational transformation across 100+ industries.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://kenresearch.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:00.108117+00:00",
+          "evidence_text": "Matched in page snippet: Ken Research delivers consulting-first market intelligence with 200,000+ reports. Strategy, M&A, IPO advisory & organizational transformation across 1",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Policycommons",
+      "website": "https://policycommons.net",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://policycommons.net/artifacts/1362799/a-digital-financial-services-revolution-in-kenya/1976925/",
+        "discovered_at": "2026-09-30T12:56:34.933708+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "HTTP error 403",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Policycommons operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Policycommons",
+          "url": "https://policycommons.net",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:03.650581+00:00",
+          "evidence_text": "HTTP error 403",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": false
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Hudumaglobal",
+      "website": "https://hudumaglobal.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-services-2025",
+        "discovered_at": "2026-09-30T12:56:34.933710+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "HTTP error 503",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Hudumaglobal operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Hudumaglobal",
+          "url": "https://hudumaglobal.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:04.323647+00:00",
+          "evidence_text": "HTTP error 503",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://hudumaglobal.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:04.323647+00:00",
+          "evidence_text": "Matched in page snippet: HTTP error 503",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": false
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Researchgate",
+      "website": "https://researchgate.net",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.researchgate.net/publication/372111236_The_Impact_of_Digital_Financial_Services_on_Financial_Inclusion_in_Kenya/fulltext/64a55d9f95bbbe0c6e16a2ac/The-Impact-of-Digital-Financial-Services-on-Financial-Inclusion-in-Kenya.pdf",
+        "discovered_at": "2026-09-30T12:56:34.933712+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "HTTP error 403",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Researchgate operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Researchgate",
+          "url": "https://researchgate.net",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:05.308932+00:00",
+          "evidence_text": "HTTP error 403",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": false
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Xelius",
+      "website": "https://xelius.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://xelius.org/insights/exploring-kenyas-fintech-landscape",
+        "discovered_at": "2026-09-30T12:56:36.409866+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Xelius is a technology and innovation consultancy building AI, data, analytics, and custom software solutions that help organizations make smarter decisions and accelerate digital transformation.",
+      "exposure_signals": [],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 5,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Xelius operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Xelius | AI, Data & Software Solutions for Africa and Beyond",
+          "url": "https://xelius.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:05.607734+00:00",
+          "evidence_text": "Xelius is a technology and innovation consultancy building AI, data, analytics, and custom software solutions that help organizations make smarter decisions and accelerate digital transformation.",
+          "evidence_status": "Verified"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Aws",
+      "website": "https://aws.amazon.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://aws.amazon.com/financial-services/security-compliance/compliance-center/ke/",
+        "discovered_at": "2026-09-30T12:56:36.409883+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+      "exposure_signals": [
+        "digital payments",
+        "cloud infrastructure"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Aws operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Cloud Computing Services - Amazon Web Services (AWS)",
+          "url": "https://aws.amazon.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:07.254173+00:00",
+          "evidence_text": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://aws.amazon.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:07.254173+00:00",
+          "evidence_text": "Matched in page snippet: Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://aws.amazon.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:07.254173+00:00",
+          "evidence_text": "Matched in page snippet: Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Kitstek",
+      "website": "https://kitstek.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://kitstek.com/industries/banking/",
+        "discovered_at": "2026-09-30T12:56:36.409888+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Kitsilano Technologies is Kenya's only AWS Advanced Partner, specializing in cloud migrations, SAP on AWS, and KRA eTIMS integrations across Africa.",
+      "exposure_signals": [
+        "cloud infrastructure",
+        "financial data"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 55
+      },
+      "opportunity_score": 55,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 55/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Kitstek operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Kitsilano Technologies - Kenya's Only AWS Advanced Partner",
+          "url": "https://kitstek.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:07.940124+00:00",
+          "evidence_text": "Kitsilano Technologies is Kenya's only AWS Advanced Partner, specializing in cloud migrations, SAP on AWS, and KRA eTIMS integrations across Africa.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://kitstek.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:07.940124+00:00",
+          "evidence_text": "Matched in page snippet: Kitsilano Technologies is Kenya's only AWS Advanced Partner, specializing in cloud migrations, SAP on AWS, and KRA eTIMS integrations across Africa.",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://kitstek.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:07.940124+00:00",
+          "evidence_text": "Matched in page snippet: Kitsilano Technologies is Kenya's only AWS Advanced Partner, specializing in cloud migrations, SAP on AWS, and KRA eTIMS integrations across Africa.",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Marcopolis",
+      "website": "https://marcopolis.net",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://marcopolis.net/category/africa-reports/kenya-report/kenya-sectors/kenya-financial-services",
+        "discovered_at": "2026-09-30T12:56:36.409892+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Find country reports, news, sector analysis, interviews of Ministers, CEOs of the largest companies, videos, business, companies, reports and more",
+      "exposure_signals": [],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Marcopolis operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: MarcoPolis | Country Reports, Interviews, Multimedia & News",
+          "url": "https://marcopolis.net",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:08.377186+00:00",
+          "evidence_text": "Find country reports, news, sector analysis, interviews of Ministers, CEOs of the largest companies, videos, business, companies, reports and more",
+          "evidence_status": "Verified"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Ourkenya",
+      "website": "https://ourkenya.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://ourkenya.com/Corporate-Kenya/Fintech-Kenya",
+        "discovered_at": "2026-09-30T12:56:36.409896+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Kenya's history, written together. 7,797 notes, 140 trails, and 58,727 connections across Kenya's history.",
+      "exposure_signals": [
+        "cloud infrastructure"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 40/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Ourkenya operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Our Kenya",
+          "url": "https://ourkenya.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:09.544203+00:00",
+          "evidence_text": "Kenya's history, written together. 7,797 notes, 140 trails, and 58,727 connections across Kenya's history.",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://ourkenya.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:09.544203+00:00",
+          "evidence_text": "Matched in page snippet: Kenya's history, written together. 7,797 notes, 140 trails, and 58,727 connections across Kenya's history.",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "F6S",
+      "website": "https://f6s.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://www.f6s.com/companies/fintech/kenya/co",
+        "discovered_at": "2026-09-30T12:56:36.409900+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "IP: 102.68.78.171Request ID: ZyVz7r-7kAPWc7I-O36RiSsAaUbU-gd1iFYEu0nd0xFsyt2G67fn1A==",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 35/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed F6S operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Checking your browser",
+          "url": "https://f6s.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:10.340088+00:00",
+          "evidence_text": "IP: 102.68.78.171Request ID: ZyVz7r-7kAPWc7I-O36RiSsAaUbU-gd1iFYEu0nd0xFsyt2G67fn1A==",
+          "evidence_status": "Verified"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Eajournals",
+      "website": "https://eajournals.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://eajournals.org/wp-content/uploads/An-Enhanced-Cloud-Adoption-Framework-for-the-Financial-Services-Industry.pdf",
+        "discovered_at": "2026-09-30T12:56:36.409904+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Previous Next Latest News GLOBAL IMPACT AWARD -AUGUST 2022: Submit original papers for consideration for the award Winner of Best Paper Award 2021 Release of the 2021 Best Paper Award is on 30th March, 2022. Submit original paper for consideration Best Paper Award 2021!Submit original and unpublished\u00a0 manuscript for\u00a0 consideration 2017 Best Publication Award released [\u2026]",
+      "exposure_signals": [
+        "cloud infrastructure"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "Deterministic score: 50/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Eajournals operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Homepage - Welcome to European/American Journals - EA Journals",
+          "url": "https://eajournals.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:11.819052+00:00",
+          "evidence_text": "Previous Next Latest News GLOBAL IMPACT AWARD -AUGUST 2022: Submit original papers for consideration for the award Winner of Best Paper Award 2021 Release of the 2021 Best Paper Award is on 30th March, 2022. Submit original paper for consideration Best Paper Award 2021!Submit original and unpublishe",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://eajournals.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:11.819052+00:00",
+          "evidence_text": "Matched in page snippet: Previous Next Latest News GLOBAL IMPACT AWARD -AUGUST 2022: Submit original papers for consideration for the award Winner of Best Paper Award 2021 Rel",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Startupblink",
+      "website": "https://startupblink.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://www.startupblink.com/top-startups/kenya/fintech/financial-services",
+        "discovered_at": "2026-09-30T12:56:36.409907+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "HTTP error 403",
+      "exposure_signals": [
+        "cloud infrastructure"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 40/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Startupblink operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Startupblink",
+          "url": "https://startupblink.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:13.276291+00:00",
+          "evidence_text": "HTTP error 403",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://startupblink.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:13.276291+00:00",
+          "evidence_text": "Matched in page snippet: HTTP error 403",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": false
+    },
+    {
+      "run_id": "run_20260930_125633_ce93",
+      "company": "Ict",
+      "website": "https://ict.go.ke",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services cloud",
+        "source_url": "https://www.ict.go.ke/sites/default/files/2026-07/Final%20%20Kenya%20Cloud%20Policy%202025%20Implementation%20Guidelines.pdf",
+        "discovered_at": "2026-09-30T12:56:36.409911+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services cloud"
+      },
+      "description": "Digital Infrastructure | Digital Government Services, Products and Data Management | Digital Innovation, Entrepreneurship and Digital Business",
+      "exposure_signals": [
+        "digital payments",
+        "cloud infrastructure"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 10,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 45
+      },
+      "opportunity_score": 45,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "Deterministic score: 45/100",
+      "business_observations": [
+        "LLM synthesis skipped (--skip-llm)"
+      ],
+      "outreach_message": "Hi [Contact], we noticed Ict operates in financial services.",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: MICDE | Ministry of Information, Communications and the Digital Economy",
+          "url": "https://ict.go.ke",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T12:57:13.962964+00:00",
+          "evidence_text": "Digital Infrastructure | Digital Government Services, Products and Data Management | Digital Innovation, Entrepreneurship and Digital Business",
+          "evidence_status": "Verified"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://ict.go.ke",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:13.962964+00:00",
+          "evidence_text": "Matched in page snippet: Digital Infrastructure | Digital Government Services, Products and Data Management | Digital Innovation, Entrepreneurship and Digital Business",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://ict.go.ke",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T12:57:13.962964+00:00",
+          "evidence_text": "Matched in page snippet: Digital Infrastructure | Digital Government Services, Products and Data Management | Digital Innovation, Entrepreneurship and Digital Business",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": true
+    }
+  ],
+  "review_queue": []
+}

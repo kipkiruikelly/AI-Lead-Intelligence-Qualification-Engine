@@ -1,17 +1,18 @@
 """
+schemas/lead_schema.py
+───────────────────────
 Pydantic v2 schema definitions shared across the entire pipeline.
-All LLM output must validate against LeadRecord before being written.
+Enforces strict provenance, timestamps, run IDs, and validation contracts.
 """
 
 from __future__ import annotations
 
 from enum import Enum
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
+from datetime import datetime, timezone
 
 from pydantic import BaseModel, Field, field_validator
 
-
-# ─── Enums ────────────────────────────────────────────────────────────────────
 
 class EvidenceStatus(str, Enum):
     VERIFIED = "Verified"
@@ -37,12 +38,15 @@ class SizeBand(str, Enum):
     UNKNOWN = "Unknown"
 
 
-# ─── Sub-models ───────────────────────────────────────────────────────────────
-
 class SourceEvidence(BaseModel):
     claim: str = Field(..., min_length=1)
     url: str
-    evidence_status: EvidenceStatus
+    source_type: str = Field(default="company_website")
+    retrieved_at: str = Field(
+        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+    )
+    evidence_text: Optional[str] = None
+    evidence_status: EvidenceStatus = EvidenceStatus.UNKNOWN
 
 
 class DecisionMaker(BaseModel):
@@ -54,7 +58,9 @@ class DecisionMaker(BaseModel):
         default="Not verified",
         description="Job title or role label",
     )
-    confidence: EvidenceStatus = EvidenceStatus.UNKNOWN
+    profile_url: Optional[str] = None
+    source_url: Optional[str] = None
+    verification_status: EvidenceStatus = EvidenceStatus.UNKNOWN
     recommended_role: Optional[str] = Field(
         default=None,
         description="Recommended target role when individual is unknown",
@@ -62,7 +68,6 @@ class DecisionMaker(BaseModel):
 
 
 class ScoreBreakdown(BaseModel):
-    """Fully deterministic — set by scorer.py, never by the LLM."""
     size_score: int = Field(ge=0, le=20)
     sector_score: int = Field(ge=0, le=25)
     exposure_score: int = Field(ge=0, le=25)
@@ -72,9 +77,20 @@ class ScoreBreakdown(BaseModel):
     total: int = Field(ge=0, le=100)
 
 
-# ─── Main lead record ─────────────────────────────────────────────────────────
+class DiscoveryProvenance(BaseModel):
+    discovery_source: str
+    discovery_query: str
+    source_url: str
+    discovered_at: str = Field(
+        default_factory=lambda: datetime.now(timezone.utc).isoformat()
+    )
+    raw_source_reference: Optional[str] = None
+
 
 class LeadRecord(BaseModel):
+    # Run identification
+    run_id: str = Field(..., min_length=1)
+
     # Identity
     company: str = Field(..., min_length=1)
     website: str
@@ -82,7 +98,10 @@ class LeadRecord(BaseModel):
     location: str
     company_size: SizeBand
 
-    # Research
+    # Discovery & Provenance
+    provenance: Optional[DiscoveryProvenance] = None
+
+    # Research & Signals
     description: str
     exposure_signals: List[str] = Field(default_factory=list)
     operational_signals: List[str] = Field(default_factory=list)
@@ -102,11 +121,11 @@ class LeadRecord(BaseModel):
     # Decision maker
     decision_maker: DecisionMaker
 
-    # Reliability
+    # Reliability & Tracking
     source_evidence: List[SourceEvidence] = Field(default_factory=list)
     pipeline_status: str = Field(
         default="ok",
-        description="'ok' | 'llm_fallback' | 'needs_review'",
+        description="'ok' | 'llm_fallback' | 'llm_unavailable' | 'needs_review'",
     )
     llm_used: bool = False
     website_reachable: Optional[bool] = None
@@ -140,7 +159,7 @@ class LeadRecord(BaseModel):
 
 
 class PipelineResult(BaseModel):
-    """Wrapper returned by the pipeline for the full run."""
+    run_id: str
     leads: List[LeadRecord]
     review_queue: List[dict] = Field(default_factory=list)
     run_metadata: dict = Field(default_factory=dict)
