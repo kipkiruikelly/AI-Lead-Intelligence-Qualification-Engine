@@ -1,0 +1,25 @@
+Analyse the following company evidence and return a structured JSON object.
+
+The opportunity_score, priority, and qualification_status have already been calculated by deterministic rules and are provided below as READ-ONLY context. Do not change them.
+
+--- COMPANY EVIDENCE ---
+{{EVIDENCE_BLOCK}}
+--- END OF EVIDENCE ---
+
+Return ONLY a JSON object with exactly this structure (no markdown, no extra text):
+
+{
+  "qualification_explanation": "A clear 2-4 sentence explanation of why this company scored as it did, referencing the specific score factors from the evidence. Mention the industry risk level, the key exposure signals identified, and any regulatory context.",
+  "business_observations": [
+    "Specific observation 1 drawn directly from the evidence",
+    "Specific observation 2 drawn directly from the evidence",
+    "Specific observation 3 if applicable"
+  ],
+  "outreach_message": "A personalised, professional outreach message of 2-4 sentences. Must reference at least one specific business fact from the evidence (e.g. the specific type of data handled, a recent development, their operational model). Address as 'Hi [Contact]' if no name is known. Do not use generic phrases. Do not include unfilled placeholders.",
+  "decision_maker": {
+    "name": "Individual's name if confirmed in evidence, otherwise 'Not verified'",
+    "title": "Job title if confirmed in evidence, otherwise 'Not verified'",
+    "confidence": "Verified | Inferred | Unknown",
+    "recommended_role": "Most appropriate role to target for this company and industry (e.g. CIO / IT Director / Information Security Lead)"
+  }
+}

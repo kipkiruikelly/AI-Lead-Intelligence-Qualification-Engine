@@ -1,9 +1,9 @@
 {
   "run_metadata": {
-    "run_id": "run_20260930_142931_8829",
-    "run_timestamp": "2026-09-30T14:40:56.229028+00:00",
-    "completed_at": "2026-09-30T14:40:56.229036+00:00",
-    "elapsed_seconds": 684.51,
+    "run_id": "run_20260930_141626_ca44",
+    "run_timestamp": "2026-09-30T14:18:14.728260+00:00",
+    "completed_at": "2026-09-30T14:18:14.728267+00:00",
+    "elapsed_seconds": 108.45,
     "mode": "live",
     "discovery_provider": "web_search",
     "total_discovered": 10,
@@ -14,7 +14,7 @@
   },
   "leads": [
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "FlexPay Technologies",
       "website": "https://www.flexpay.co.ke/",
       "industry": "Financial Services",
@@ -24,7 +24,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://www.flexpay.co.ke/",
-        "discovered_at": "2026-09-30T14:30:55.917909+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043755+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Fintech company providing retail and mobile payment solutions.",
@@ -63,7 +63,7 @@
           "claim": "Company website: FlexPay Technologies",
           "url": "https://www.flexpay.co.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.922952+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045588+00:00",
           "evidence_text": "Fintech company providing retail and mobile payment solutions.",
           "evidence_status": "Inferred"
         },
@@ -71,7 +71,7 @@
           "claim": "Observed exposure signal: digital payments",
           "url": "https://www.flexpay.co.ke/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.922952+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045588+00:00",
           "evidence_text": "Matched in page snippet: Fintech company providing retail and mobile payment solutions.",
           "evidence_status": "Inferred"
         }
@@ -81,7 +81,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "Jumia Kenya",
       "website": "https://www.jumia.co.ke/",
       "industry": "Technology",
@@ -91,7 +91,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://www.jumia.co.ke/",
-        "discovered_at": "2026-09-30T14:30:55.918232+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043801+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "E-commerce marketplace and digital commerce platform.",
@@ -128,7 +128,7 @@
           "claim": "Company website: Jumia Kenya",
           "url": "https://www.jumia.co.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923102+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045736+00:00",
           "evidence_text": "E-commerce marketplace and digital commerce platform.",
           "evidence_status": "Inferred"
         }
@@ -138,7 +138,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "MFS Technologies",
       "website": "https://www.mfs.co.ke/",
       "industry": "Financial Services",
@@ -148,7 +148,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://www.mfs.co.ke/",
-        "discovered_at": "2026-09-30T14:30:55.918286+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043807+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Financial technology platform offering payments and digital lending.",
@@ -187,7 +187,7 @@
           "claim": "Company website: MFS Technologies",
           "url": "https://www.mfs.co.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923155+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045792+00:00",
           "evidence_text": "Financial technology platform offering payments and digital lending.",
           "evidence_status": "Inferred"
         },
@@ -195,7 +195,7 @@
           "claim": "Observed exposure signal: digital payments",
           "url": "https://www.mfs.co.ke/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.923155+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045792+00:00",
           "evidence_text": "Matched in page snippet: Financial technology platform offering payments and digital lending.",
           "evidence_status": "Inferred"
         }
@@ -205,7 +205,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "LendPlus Kenya",
       "website": "https://lendplus.ke/",
       "industry": "Financial Services",
@@ -215,7 +215,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://lendplus.ke/",
-        "discovered_at": "2026-09-30T14:30:55.918301+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043813+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Digital micro-lending platform.",
@@ -252,7 +252,7 @@
           "claim": "Company website: LendPlus Kenya",
           "url": "https://lendplus.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923206+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045846+00:00",
           "evidence_text": "Digital micro-lending platform.",
           "evidence_status": "Inferred"
         }
@@ -262,7 +262,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "Izwe Kenya",
       "website": "https://www.izwekenya.com/",
       "industry": "Financial Services",
@@ -272,7 +272,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://www.izwekenya.com/",
-        "discovered_at": "2026-09-30T14:30:55.918308+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043818+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Credit provider offering digital financial services.",
@@ -311,7 +311,7 @@
           "claim": "Company website: Izwe Kenya",
           "url": "https://www.izwekenya.com/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923249+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045905+00:00",
           "evidence_text": "Credit provider offering digital financial services.",
           "evidence_status": "Inferred"
         },
@@ -319,7 +319,7 @@
           "claim": "Observed exposure signal: financial data",
           "url": "https://www.izwekenya.com/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.923249+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045905+00:00",
           "evidence_text": "Matched in page snippet: Credit provider offering digital financial services.",
           "evidence_status": "Inferred"
         }
@@ -329,7 +329,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "U&I Microfinance Bank",
       "website": "https://www.uni-microfinance.co.ke/",
       "industry": "Banking",
@@ -339,7 +339,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://www.uni-microfinance.co.ke/",
-        "discovered_at": "2026-09-30T14:30:55.918315+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043823+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Licensed microfinance bank with digital banking focus.",
@@ -378,7 +378,7 @@
           "claim": "Company website: U&I Microfinance Bank",
           "url": "https://www.uni-microfinance.co.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923322+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045958+00:00",
           "evidence_text": "Licensed microfinance bank with digital banking focus.",
           "evidence_status": "Inferred"
         },
@@ -386,7 +386,7 @@
           "claim": "Observed exposure signal: financial data",
           "url": "https://www.uni-microfinance.co.ke/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.923322+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.045958+00:00",
           "evidence_text": "Matched in page snippet: Licensed microfinance bank with digital banking focus.",
           "evidence_status": "Inferred"
         }
@@ -396,7 +396,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "Kenya Reinsurance Corporation",
       "website": "http://www.kenyare.co.ke/",
       "industry": "Financial Services",
@@ -406,7 +406,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "http://www.kenyare.co.ke/",
-        "discovered_at": "2026-09-30T14:30:55.918322+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043828+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Reinsurance provider serving regional markets.",
@@ -445,7 +445,7 @@
           "claim": "Company website: Kenya Reinsurance Corporation",
           "url": "http://www.kenyare.co.ke/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923374+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046008+00:00",
           "evidence_text": "Reinsurance provider serving regional markets.",
           "evidence_status": "Inferred"
         }
@@ -455,7 +455,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "MYDAWA",
       "website": "https://mydawa.com/",
       "industry": "Healthcare",
@@ -465,7 +465,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://mydawa.com/",
-        "discovered_at": "2026-09-30T14:30:55.918329+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043842+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Digital healthcare and online pharmacy e-commerce platform.",
@@ -504,7 +504,7 @@
           "claim": "Company website: MYDAWA",
           "url": "https://mydawa.com/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923483+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046059+00:00",
           "evidence_text": "Digital healthcare and online pharmacy e-commerce platform.",
           "evidence_status": "Inferred"
         },
@@ -512,7 +512,7 @@
           "claim": "Observed exposure signal: health records",
           "url": "https://mydawa.com/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.923483+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046059+00:00",
           "evidence_text": "Matched in page snippet: Digital healthcare and online pharmacy e-commerce platform.",
           "evidence_status": "Inferred"
         }
@@ -522,7 +522,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "Escrow Group",
       "website": "https://escrowgroup.org/",
       "industry": "Financial Services",
@@ -532,7 +532,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "https://escrowgroup.org/",
-        "discovered_at": "2026-09-30T14:30:55.918335+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043848+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Fintech group offering trading and payments solutions.",
@@ -571,7 +571,7 @@
           "claim": "Company website: Escrow Group",
           "url": "https://escrowgroup.org/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923540+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046113+00:00",
           "evidence_text": "Fintech group offering trading and payments solutions.",
           "evidence_status": "Inferred"
         },
@@ -579,7 +579,7 @@
           "claim": "Observed exposure signal: digital payments",
           "url": "https://escrowgroup.org/",
           "source_type": "scraped_text_analysis",
-          "retrieved_at": "2026-09-30T14:30:55.923540+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046113+00:00",
           "evidence_text": "Matched in page snippet: Fintech group offering trading and payments solutions.",
           "evidence_status": "Inferred"
         }
@@ -589,7 +589,7 @@
       "website_reachable": null
     },
     {
-      "run_id": "run_20260930_142931_8829",
+      "run_id": "run_20260930_141626_ca44",
       "company": "Adrian Kenya",
       "website": "http://www.adriankenya.com/",
       "industry": "Telecommunications",
@@ -599,7 +599,7 @@
         "discovery_source": "web_search_fallback",
         "discovery_query": "live_directory_lookup",
         "source_url": "http://www.adriankenya.com/",
-        "discovered_at": "2026-09-30T14:30:55.918341+00:00",
+        "discovered_at": "2026-09-30T14:16:43.043853+00:00",
         "raw_source_reference": "LiveFallbackDirectory"
       },
       "description": "Engineering and technology solutions across telecom and ICT.",
@@ -636,7 +636,7 @@
           "claim": "Company website: Adrian Kenya",
           "url": "http://www.adriankenya.com/",
           "source_type": "company_website",
-          "retrieved_at": "2026-09-30T14:30:55.923590+00:00",
+          "retrieved_at": "2026-09-30T14:16:43.046166+00:00",
           "evidence_text": "Engineering and technology solutions across telecom and ICT.",
           "evidence_status": "Inferred"
         }

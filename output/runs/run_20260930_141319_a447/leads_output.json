@@ -1,0 +1,1071 @@
+{
+  "run_metadata": {
+    "run_id": "run_20260930_141319_a447",
+    "run_timestamp": "2026-09-30T14:15:36.015559+00:00",
+    "completed_at": "2026-09-30T14:15:36.015564+00:00",
+    "elapsed_seconds": 136.77,
+    "mode": "live",
+    "discovery_provider": "web_search",
+    "total_discovered": 17,
+    "total_valid": 17,
+    "total_review_queue": 0,
+    "llm_used_count": 0,
+    "skip_llm": false
+  },
+  "leads": [
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "F6S",
+      "website": "https://f6s.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://www.f6s.com/companies/financial-services/kenya/co",
+        "discovered_at": "2026-09-30T14:13:21.804985+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "20 Top Financial Services Companies in Kenya \u00b7 September 2026www.f6s.com/companies/financial-services/kenya/co2026-09-01T00:00:00.0000000Detailed info and reviews on 20 topFinancialServicescompaniesan",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed F6S operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: F6S",
+          "url": "https://f6s.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789273+00:00",
+          "evidence_text": "20 Top Financial Services Companies in Kenya \u00b7 September 2026www.f6s.com/companies/financial-services/kenya/co2026-09-01T00:00:00.0000000Detailed info and reviews on 20 topFinancialServicescompaniesan",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Clutch",
+      "website": "https://clutch.co",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://clutch.co/ke/financial-services",
+        "discovered_at": "2026-09-30T14:13:21.805055+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Top Financial Services Firms in Kenya - Clutch.coclutch.co/ke/financial-services2026-09-29T00:00:00.0000000RecommendedFinancialServicescompaniesinKenyainclude Avertis Solutions Ltd, Flexi Personnel Lt",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Clutch operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Clutch",
+          "url": "https://clutch.co",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789454+00:00",
+          "evidence_text": "Top Financial Services Firms in Kenya - Clutch.coclutch.co/ke/financial-services2026-09-29T00:00:00.0000000RecommendedFinancialServicescompaniesinKenyainclude Avertis Solutions Ltd, Flexi Personnel Lt",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Ensun",
+      "website": "https://ensun.io",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://ensun.io/search/financial-services/kenya",
+        "discovered_at": "2026-09-30T14:13:21.805064+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Top 63 Financial Services Companies in Kenya (2026) | ensunensun.io/search/financial-services/kenyaKey takeaway CPFFinancialServicesis a prominent provider of diversefinancialsolutions, including Pens",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Ensun operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Ensun",
+          "url": "https://ensun.io",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789583+00:00",
+          "evidence_text": "Top 63 Financial Services Companies in Kenya (2026) | ensunensun.io/search/financial-services/kenyaKey takeaway CPFFinancialServicesis a prominent provider of diversefinancialsolutions, including Pens",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Aeroleads",
+      "website": "https://aeroleads.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://aeroleads.com/list/top-financial-services-companies-in-kenya",
+        "discovered_at": "2026-09-30T14:13:21.805072+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Top Financial Services Companies In Kenya - AeroLeadsaeroleads.com/list/top-financial-services-companies-in-kenyaTopFinancialServicesCompaniesInKenyaBrowse 50financialservicescompaniesinKenya, includi",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Aeroleads operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Aeroleads",
+          "url": "https://aeroleads.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789706+00:00",
+          "evidence_text": "Top Financial Services Companies In Kenya - AeroLeadsaeroleads.com/list/top-financial-services-companies-in-kenyaTopFinancialServicesCompaniesInKenyaBrowse 50financialservicescompaniesinKenya, includi",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Fliarbi",
+      "website": "https://fliarbi.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://fliarbi.com/companies/best-financial-services-companies-in-kenya/",
+        "discovered_at": "2026-09-30T14:13:21.805083+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Best Financial Services Companies in Kenya - fliarbi.comfliarbi.com/companies/best-financial-services-companies-in-kenya/The 95 bestFinancialServicescompaniesinKenyain2026, ranked by funding and momen",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Fliarbi operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Fliarbi",
+          "url": "https://fliarbi.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789831+00:00",
+          "evidence_text": "Best Financial Services Companies in Kenya - fliarbi.comfliarbi.com/companies/best-financial-services-companies-in-kenya/The 95 bestFinancialServicescompaniesinKenyain2026, ranked by funding and momen",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Techbehemoths",
+      "website": "https://techbehemoths.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://techbehemoths.com/companies/financial/kenya",
+        "discovered_at": "2026-09-30T14:13:21.805095+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Top 20+ Financial Companies in Kenya (2026) - TechBehemothstechbehemoths.com/companies/financial/kenyaDiscover the bestFinancialcompaniesinKenya. 32companiesare available in this region. Hire the topF",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Techbehemoths operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Techbehemoths",
+          "url": "https://techbehemoths.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.789936+00:00",
+          "evidence_text": "Top 20+ Financial Companies in Kenya (2026) - TechBehemothstechbehemoths.com/companies/financial/kenyaDiscover the bestFinancialcompaniesinKenya. 32companiesare available in this region. Hire the topF",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Zoominfo",
+      "website": "https://zoominfo.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "financial services companies in Kenya",
+        "source_url": "https://www.zoominfo.com/top-lists/top-finance-companies-in-KE",
+        "discovered_at": "2026-09-30T14:13:21.805104+00:00",
+        "raw_source_reference": "WebSearchQuery: financial services companies in Kenya"
+      },
+      "description": "Top Finance companies in Kenya - September, 2026 - ZoomInfowww.zoominfo.com/top-lists/top-finance-companies-in-KETop FinancecompaniesinKenya- September, 2026 Listed below are the topcompaniesinKenyaby",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Zoominfo operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Zoominfo",
+          "url": "https://zoominfo.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790027+00:00",
+          "evidence_text": "Top Finance companies in Kenya - September, 2026 - ZoomInfowww.zoominfo.com/top-lists/top-finance-companies-in-KETop FinancecompaniesinKenya- September, 2026 Listed below are the topcompaniesinKenyaby",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://zoominfo.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790027+00:00",
+          "evidence_text": "Matched in page snippet: Top Finance companies in Kenya - September, 2026 - ZoomInfowww.zoominfo.com/top-lists/top-finance-companies-in-KETop FinancecompaniesinKenya- Septembe",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Dfsak",
+      "website": "https://dfsak.co.ke",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.dfsak.co.ke/",
+        "discovered_at": "2026-09-30T14:13:24.328031+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Home [www.dfsak.co.ke]www.dfsak.co.keTheDigitalFinancialServicesAssociation ofKenya(DFSAK), is a new member organization incorporated in 2019 bringing together the leadingdigital-first loan providers ",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Dfsak operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Dfsak",
+          "url": "https://dfsak.co.ke",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790116+00:00",
+          "evidence_text": "Home [www.dfsak.co.ke]www.dfsak.co.keTheDigitalFinancialServicesAssociation ofKenya(DFSAK), is a new member organization incorporated in 2019 bringing together the leadingdigital-first loan providers ",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://dfsak.co.ke",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790116+00:00",
+          "evidence_text": "Matched in page snippet: Home [www.dfsak.co.ke]www.dfsak.co.keTheDigitalFinancialServicesAssociation ofKenya(DFSAK), is a new member organization incorporated in 2019 bringing",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Pesamarket",
+      "website": "https://pesamarket.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://pesamarket.com/en/blog/digital-banking-kenya-2025",
+        "discovered_at": "2026-09-30T14:13:24.328072+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Digital Banking in Kenya 2026: Apps, Features & Security...pesamarket.com/en/blog/digital-banking-kenya-2025This comprehensive guide explores thedigitalbanking landscape inKenyafor 2026 - comparing to",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Pesamarket operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Pesamarket",
+          "url": "https://pesamarket.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790203+00:00",
+          "evidence_text": "Digital Banking in Kenya 2026: Apps, Features & Security...pesamarket.com/en/blog/digital-banking-kenya-2025This comprehensive guide explores thedigitalbanking landscape inKenyafor 2026 - comparing to",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://pesamarket.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790203+00:00",
+          "evidence_text": "Matched in page snippet: Digital Banking in Kenya 2026: Apps, Features & Security...pesamarket.com/en/blog/digital-banking-kenya-2025This comprehensive guide explores thedigit",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Fsdkenya",
+      "website": "https://fsdkenya.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.fsdkenya.org/category/thematic-areas/digital-finance/",
+        "discovered_at": "2026-09-30T14:13:24.328081+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Digital finance - Financial Sector Deepening Kenya (FSD Kenya)www.fsdkenya.org/category/thematic-areas/digital-finance/2025-03-19T00:00:00.0000000In 2019, FSDKenyaand Turaco - a Kenyan microinsurtech ",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Fsdkenya operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Fsdkenya",
+          "url": "https://fsdkenya.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790287+00:00",
+          "evidence_text": "Digital finance - Financial Sector Deepening Kenya (FSD Kenya)www.fsdkenya.org/category/thematic-areas/digital-finance/2025-03-19T00:00:00.0000000In 2019, FSDKenyaand Turaco - a Kenyan microinsurtech ",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://fsdkenya.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790287+00:00",
+          "evidence_text": "Matched in page snippet: Digital finance - Financial Sector Deepening Kenya (FSD Kenya)www.fsdkenya.org/category/thematic-areas/digital-finance/2025-03-19T00:00:00.0000000In 2",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Uniathenaprods3",
+      "website": "https://uniathenaprods3.uniathena.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://uniathenaprods3.uniathena.com/s3fs-public/2024-08/URJ0824006_0.pdf",
+        "discovered_at": "2026-09-30T14:13:24.328087+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "PDFDigital Financial Services (DFS): A Case of Kenyauniathenaprods3.uniathena.com/s3fs-public/2024-08/URJ0824006_0.pdfThis study investigated howDigitalFinancialServices(DFS) affectfinancialinclusion ",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Uniathenaprods3 operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Uniathenaprods3",
+          "url": "https://uniathenaprods3.uniathena.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790375+00:00",
+          "evidence_text": "PDFDigital Financial Services (DFS): A Case of Kenyauniathenaprods3.uniathena.com/s3fs-public/2024-08/URJ0824006_0.pdfThis study investigated howDigitalFinancialServices(DFS) affectfinancialinclusion ",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Allafripreneurs",
+      "website": "https://allafripreneurs.org",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://allafripreneurs.org/east-africa/kenya/digital-financial-services-in-kenya-how-mobile-money-is-reshaping-business-and-opportunity/",
+        "discovered_at": "2026-09-30T14:13:24.328093+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Digital Financial Services in Kenya: How Mobile Money Is Reshaping ...allafripreneurs.org/east-africa/kenya/digital-financial-services-in-kenya-how-mobile-money-is-reshaping-business-and-opportunity/2",
+      "exposure_signals": [
+        "cloud infrastructure"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 50/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Allafripreneurs operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Allafripreneurs",
+          "url": "https://allafripreneurs.org",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790462+00:00",
+          "evidence_text": "Digital Financial Services in Kenya: How Mobile Money Is Reshaping ...allafripreneurs.org/east-africa/kenya/digital-financial-services-in-kenya-how-mobile-money-is-reshaping-business-and-opportunity/2",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: cloud infrastructure",
+          "url": "https://allafripreneurs.org",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790462+00:00",
+          "evidence_text": "Matched in page snippet: Digital Financial Services in Kenya: How Mobile Money Is Reshaping ...allafripreneurs.org/east-africa/kenya/digital-financial-services-in-kenya-how-mo",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Sdk",
+      "website": "https://sdk.finance",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://sdk.finance/blog/fintech-kenya-2025-landscape-overview-growth-drivers-and-barriers/",
+        "discovered_at": "2026-09-30T14:13:24.328099+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Fintech Kenya 2026: Market Size, Top Fintech Companies, and Key Trendssdk.finance/blog/fintech-kenya-2025-landscape-overview-growth-drivers-and-barriers/2026-04-14T00:00:00.0000000As a result, over 83",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Sdk operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Sdk",
+          "url": "https://sdk.finance",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790551+00:00",
+          "evidence_text": "Fintech Kenya 2026: Market Size, Top Fintech Companies, and Key Trendssdk.finance/blog/fintech-kenya-2025-landscape-overview-growth-drivers-and-barriers/2026-04-14T00:00:00.0000000As a result, over 83",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://sdk.finance",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790551+00:00",
+          "evidence_text": "Matched in page snippet: Fintech Kenya 2026: Market Size, Top Fintech Companies, and Key Trendssdk.finance/blog/fintech-kenya-2025-landscape-overview-growth-drivers-and-barrie",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Dfpak",
+      "website": "https://dfpak.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://dfpak.com/",
+        "discovered_at": "2026-09-30T14:13:24.328104+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Home [dfpak.com]dfpak.comTo facilitate capacity building and offer technical assistance toKenya'sDigitalFinancialServicesEcosystem by bringing together diverse individuals from across thedigitalfinanc",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Dfpak operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Dfpak",
+          "url": "https://dfpak.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790649+00:00",
+          "evidence_text": "Home [dfpak.com]dfpak.comTo facilitate capacity building and offer technical assistance toKenya'sDigitalFinancialServicesEcosystem by bringing together diverse individuals from across thedigitalfinanc",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Scribd",
+      "website": "https://scribd.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://www.scribd.com/document/934378344/Financial-Services-and-Payment-Systems",
+        "discovered_at": "2026-09-30T14:13:24.328110+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Kenya's Digital Financial Services Regulationwww.scribd.com/document/934378344/Financial-Services-and-Payment-SystemsThe document outlines the regulatory landscape ofdigitalfinancialservicesinKenya, e",
+      "exposure_signals": [
+        "digital payments"
+      ],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 40
+      },
+      "opportunity_score": 40,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 40/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Scribd operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Scribd",
+          "url": "https://scribd.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790745+00:00",
+          "evidence_text": "Kenya's Digital Financial Services Regulationwww.scribd.com/document/934378344/Financial-Services-and-Payment-SystemsThe document outlines the regulatory landscape ofdigitalfinancialservicesinKenya, e",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: digital payments",
+          "url": "https://scribd.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790745+00:00",
+          "evidence_text": "Matched in page snippet: Kenya's Digital Financial Services Regulationwww.scribd.com/document/934378344/Financial-Services-and-Payment-SystemsThe document outlines the regulat",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Thefintechtimes",
+      "website": "https://thefintechtimes.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://thefintechtimes.com/the-fintech-and-wider-digital-ecosystem-of-kenya-in-2026/",
+        "discovered_at": "2026-09-30T14:13:24.328115+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "The Fintech and Wider Digital Ecosystem of Kenya in 2026thefintechtimes.com/the-fintech-and-wider-digital-ecosystem-of-kenya-in-2026/2026-04-16T00:00:00.0000000This has helpedKenyaavoid stifling early",
+      "exposure_signals": [],
+      "operational_signals": [],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 0,
+        "complexity_score": 0,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 35
+      },
+      "opportunity_score": 35,
+      "priority": "Low Priority",
+      "qualification_status": "Needs Review",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 35/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Thefintechtimes operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Thefintechtimes",
+          "url": "https://thefintechtimes.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790832+00:00",
+          "evidence_text": "The Fintech and Wider Digital Ecosystem of Kenya in 2026thefintechtimes.com/the-fintech-and-wider-digital-ecosystem-of-kenya-in-2026/2026-04-16T00:00:00.0000000This has helpedKenyaavoid stifling early",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    },
+    {
+      "run_id": "run_20260930_141319_a447",
+      "company": "Hudumaglobal",
+      "website": "https://hudumaglobal.com",
+      "industry": "financial services",
+      "location": "Kenya",
+      "company_size": "Unknown",
+      "provenance": {
+        "discovery_source": "web_search",
+        "discovery_query": "Kenya financial services digital",
+        "source_url": "https://hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-services-2025",
+        "discovered_at": "2026-09-30T14:13:24.328121+00:00",
+        "raw_source_reference": "WebSearchQuery: Kenya financial services digital"
+      },
+      "description": "Banking in Kenya: A Complete Guide to Commercial Banks, Digital Banks ...hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-services-20252026-02-20T00:00:00.0000000Complete g",
+      "exposure_signals": [
+        "financial data"
+      ],
+      "operational_signals": [
+        "regional operations"
+      ],
+      "regulatory_signals": [],
+      "score_breakdown": {
+        "size_score": 10,
+        "sector_score": 25,
+        "exposure_score": 5,
+        "complexity_score": 10,
+        "regulatory_score": 0,
+        "bonus_score": 0,
+        "total": 50
+      },
+      "opportunity_score": 50,
+      "priority": "Medium Priority",
+      "qualification_status": "Qualified",
+      "qualification_explanation": "LLM synthesis unavailable. Deterministic score: 50/100.",
+      "business_observations": [
+        "LLM API request failed or rate-limited."
+      ],
+      "outreach_message": "Hi [Contact], I noticed Hudumaglobal operates in financial services. Would a brief security discussion be useful?",
+      "decision_maker": {
+        "name": "Not verified",
+        "title": "Not verified",
+        "profile_url": null,
+        "source_url": null,
+        "verification_status": "Unknown",
+        "recommended_role": "CIO / IT Director / Information Security Lead"
+      },
+      "source_evidence": [
+        {
+          "claim": "Company website: Hudumaglobal",
+          "url": "https://hudumaglobal.com",
+          "source_type": "company_website",
+          "retrieved_at": "2026-09-30T14:13:36.790919+00:00",
+          "evidence_text": "Banking in Kenya: A Complete Guide to Commercial Banks, Digital Banks ...hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-services-20252026-02-20T00:00:00.0000000Complete g",
+          "evidence_status": "Inferred"
+        },
+        {
+          "claim": "Observed exposure signal: financial data",
+          "url": "https://hudumaglobal.com",
+          "source_type": "scraped_text_analysis",
+          "retrieved_at": "2026-09-30T14:13:36.790919+00:00",
+          "evidence_text": "Matched in page snippet: Banking in Kenya: A Complete Guide to Commercial Banks, Digital Banks ...hudumaglobal.com/blog/banking-kenya-commercial-banks-digital-banks-financial-",
+          "evidence_status": "Inferred"
+        }
+      ],
+      "pipeline_status": "llm_unavailable",
+      "llm_used": false,
+      "website_reachable": null
+    }
+  ],
+  "review_queue": []
+}

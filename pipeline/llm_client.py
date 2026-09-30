@@ -93,20 +93,44 @@ def _extract_json(text: str) -> Optional[Dict[str, Any]]:
     return None
 
 
+def _parse_retry_delay(exc: Exception) -> float:
+    """Extract retryDelay seconds from a Gemini 429/503 error, or return 0."""
+    try:
+        import re as _re
+        msg = str(exc)
+        # API returns retryDelay like: 'retryDelay': '17s'
+        match = _re.search(r"retryDelay['\"]:\s*['\"](\d+(?:\.\d+)?)s", msg)
+        if match:
+            return float(match.group(1))
+    except Exception:
+        pass
+    return 0.0
+
+
 def _call_gemini(system_prompt: str, user_message: str, model: str) -> Optional[str]:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         return None
     try:
-        import google.generativeai as genai  # type: ignore
-        genai.configure(api_key=api_key)
-        gemini_model = genai.GenerativeModel(
-            model_name=model,
-            system_instruction=system_prompt,
+        from google import genai  # type: ignore
+        from google.genai import types  # type: ignore
+
+        client = genai.Client(api_key=api_key)
+        full_prompt = f"{system_prompt}\n\n{user_message}" if system_prompt else user_message
+        response = client.models.generate_content(
+            model=model,
+            contents=full_prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.2,
+                response_mime_type="application/json",
+            ),
         )
-        response = gemini_model.generate_content(user_message)
         return response.text
     except Exception as exc:
+        delay = _parse_retry_delay(exc)
+        if delay > 0:
+            logger.warning("Gemini API rate-limited. Waiting %.1fs as advised by API...", delay)
+            time.sleep(min(delay, 60))  # cap at 60s per retry
         logger.warning("Gemini API error: %s", exc)
         return None
 

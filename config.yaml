@@ -34,7 +34,7 @@ scoring:
 llm:
   enabled: true
   provider: gemini             # "gemini" | "openai"
-  gemini_model: gemini-2.0-flash
+  gemini_model: gemini-3.8-flash
   openai_model: gpt-4o-mini
 
 retry:
