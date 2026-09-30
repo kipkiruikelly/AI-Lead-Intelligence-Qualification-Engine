@@ -6,6 +6,7 @@ Step 2 — Company Research & Enrichment
 Performs live HTTP request to company homepage, parses HTML title,
 meta description, visible text, and technology/exposure signals.
 Structures evidence with ISO UTC timestamps and reliability tags.
+Applies SSRF security protections.
 """
 
 from __future__ import annotations
@@ -17,6 +18,8 @@ from typing import Any, Dict, List
 
 import requests
 
+from pipeline.security import is_safe_url
+
 logger = logging.getLogger(__name__)
 
 _REQUEST_TIMEOUT = 8  # seconds timeout for live fetching
@@ -24,14 +27,9 @@ _USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.3
 
 
 def _fetch_webpage_content(url: str) -> tuple[bool | None, str, str]:
-    """
-    Fetch webpage HTML content and extract title and meta description.
-
-    Returns:
-        (reachable, title, description_snippet)
-    """
-    if not url or not url.startswith(("http://", "https://")):
-        return None, "", ""
+    if not is_safe_url(url):
+        logger.warning("SSRF Protection: Blocked unsafe or private URL attempt: %s", url)
+        return False, "", "Blocked: Invalid or internal URL (SSRF Defense)"
 
     headers = {"User-Agent": _USER_AGENT, "Accept": "text/html,application/xhtml+xml"}
     try:
@@ -48,18 +46,19 @@ def _fetch_webpage_content(url: str) -> tuple[bool | None, str, str]:
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Title
+        # Strip script and style elements to prevent prompt injection payload contamination
+        for script in soup(["script", "style", "iframe"]):
+            script.decompose()
+
         title_el = soup.find("title")
         title = title_el.get_text(strip=True) if title_el else ""
 
-        # Description meta
         meta_desc = soup.find("meta", attrs={"name": re.compile(r"description", re.I)})
         if not meta_desc:
             meta_desc = soup.find("meta", attrs={"property": re.compile(r"og:description", re.I)})
 
         desc = meta_desc.get("content", "").strip() if meta_desc else ""
 
-        # Visible headings/text snippet fallback
         if not desc:
             p_tags = [p.get_text(strip=True) for p in soup.find_all(["p", "h1", "h2"]) if len(p.get_text(strip=True)) > 20]
             desc = " | ".join(p_tags[:3]) if p_tags else title
@@ -75,7 +74,6 @@ def _fetch_webpage_content(url: str) -> tuple[bool | None, str, str]:
 
 
 def _extract_signals_from_text(text: str) -> Dict[str, List[str]]:
-    """Scan retrieved page text for exposure, operational, and regulatory signals."""
     lower = text.lower()
 
     exposure_keywords = {
@@ -129,7 +127,6 @@ def _recommend_role(industry: str) -> str:
 
 
 def enrich(company: Dict[str, Any], skip_website_check: bool = False) -> Dict[str, Any]:
-    """Enrich discovered lead with live web scraping and evidence attribution."""
     enriched = dict(company)
     now_iso = datetime.now(timezone.utc).isoformat()
 
@@ -145,19 +142,15 @@ def enrich(company: Dict[str, Any], skip_website_check: bool = False) -> Dict[st
     if desc and len(desc) > 10:
         enriched["description"] = desc
 
-    # Extract dynamic signals if web text available
     text_corpus = (title + " " + desc + " " + company.get("description", "")).strip()
     extracted = _extract_signals_from_text(text_corpus)
 
-    # Combine extracted signals with any provider signals without duplicating
     enriched["exposure_signals"] = list(set(enriched.get("exposure_signals", []) + extracted["exposure_signals"]))
     enriched["regulatory_signals"] = list(set(enriched.get("regulatory_signals", []) + extracted["regulatory_signals"]))
     enriched["operational_signals"] = list(set(enriched.get("operational_signals", []) + extracted["operational_signals"]))
 
-    # Standardize size
     enriched["company_size"] = company.get("company_size", "Unknown")
 
-    # Source evidence with ISO UTC timestamps
     source_ev = []
     if url:
         source_ev.append({
@@ -181,7 +174,6 @@ def enrich(company: Dict[str, Any], skip_website_check: bool = False) -> Dict[st
 
     enriched["source_evidence"] = source_ev
 
-    # Safe decision maker defaults
     dm_name = company.get("decision_maker_name", "Not verified")
     dm_title = company.get("decision_maker_title", "Not verified")
 

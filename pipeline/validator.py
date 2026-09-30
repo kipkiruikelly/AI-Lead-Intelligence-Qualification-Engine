@@ -9,6 +9,7 @@ Validates enriched and analyzed company records against Pydantic LeadRecord.
 from __future__ import annotations
 
 import logging
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Tuple
 
 from pydantic import ValidationError
@@ -32,6 +33,7 @@ logger = logging.getLogger(__name__)
 
 def _coerce_record(data: Dict[str, Any], run_id: str) -> Dict[str, Any]:
     coerced = dict(data)
+    now_iso = datetime.now(timezone.utc).isoformat()
 
     coerced["run_id"] = run_id
 
@@ -73,12 +75,16 @@ def _coerce_record(data: Dict[str, Any], run_id: str) -> Dict[str, Any]:
     prov = coerced.get("provenance")
     if not prov or not isinstance(prov, dict):
         coerced["provenance"] = {
-            "discovery_source": coerced.get("discovery_source", "web_search"),
-            "discovery_query": coerced.get("discovery_query", "target_search"),
-            "source_url": coerced.get("source_url", coerced.get("website", "")),
-            "discovered_at": coerced.get("discovered_at"),
-            "raw_source_reference": coerced.get("raw_source_reference"),
+            "discovery_source": str(coerced.get("discovery_source", "web_search")),
+            "discovery_query": str(coerced.get("discovery_query", "target_search")),
+            "source_url": str(coerced.get("source_url", coerced.get("website", ""))),
+            "discovered_at": str(coerced.get("discovered_at") or now_iso),
+            "raw_source_reference": str(coerced.get("raw_source_reference") or "system_coercion"),
         }
+    else:
+        if not prov.get("discovered_at"):
+            prov["discovered_at"] = now_iso
+        coerced["provenance"] = prov
 
     # Decision maker
     dm = coerced.get("decision_maker", {})
@@ -86,8 +92,19 @@ def _coerce_record(data: Dict[str, Any], run_id: str) -> Dict[str, Any]:
         dm = {}
     dm.setdefault("name", "Not verified")
     dm.setdefault("title", "Not verified")
+
+    # Hallucination Guard: If name is not 'Not verified' but verification_status is Verified without source evidence, reset to Unknown/Not verified
     v_conf = dm.get("verification_status", dm.get("confidence", "Unknown"))
-    dm["verification_status"] = v_conf if v_conf in {e.value for e in EvidenceStatus} else "Unknown"
+
+    has_verified_dm_evidence = any(
+        e.get("evidence_status") == "Verified" and "decision maker" in e.get("claim", "").lower()
+        for e in coerced.get("source_evidence", [])
+    )
+
+    if dm["name"] != "Not verified" and v_conf == "Verified" and not has_verified_dm_evidence:
+        dm["verification_status"] = "Unknown"
+
+    dm["verification_status"] = dm["verification_status"] if dm["verification_status"] in {e.value for e in EvidenceStatus} else "Unknown"
     coerced["decision_maker"] = dm
 
     # Source evidence
@@ -102,7 +119,7 @@ def _coerce_record(data: Dict[str, Any], run_id: str) -> Dict[str, Any]:
                 "claim": str(item.get("claim", ""))[:500],
                 "url": str(item.get("url", "")),
                 "source_type": str(item.get("source_type", "company_website")),
-                "retrieved_at": str(item.get("retrieved_at")),
+                "retrieved_at": str(item.get("retrieved_at") or now_iso),
                 "evidence_text": item.get("evidence_text"),
                 "evidence_status": ev_conf,
             })
