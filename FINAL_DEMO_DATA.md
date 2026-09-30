@@ -21,9 +21,7 @@ These 3 leads were discovered dynamically from live web searches, scraped in rea
 * **Regulatory Frameworks**: Data Protection Act
 * **Website Status**: `Verified` (HTTP 200 OK)
 * **Decision Maker**: `Not verified` (Recommended Role: `CIO / IT Director / Information Security Lead`)
-
-### Generated Personalised Outreach
-> *"Hi [Contact], I noticed Fsdkenya operates in Financial Services with digital payment and financial data workflows. That combination usually makes visibility around access control, data protection, and operational security critical. Would a short security-readiness discussion be useful?"*
+* **LLM Analysis Status**: `NOT VERIFIED` (`GEMINI_API_KEY` / `OPENAI_API_KEY` required in environment)
 
 ---
 
@@ -43,9 +41,7 @@ These 3 leads were discovered dynamically from live web searches, scraped in rea
 * **Observed Exposure Signals**: Digital payments, cloud infrastructure
 * **Website Status**: `Verified` (HTTP 200 OK)
 * **Decision Maker**: `Not verified` (Recommended Role: `CTO / IT Director / Head of Technology`)
-
-### Generated Personalised Outreach
-> *"Hi [Contact], I came across Pesamarket and noticed your focus on digital banking platforms in Kenya. Security readiness and API access controls are key priorities for financial technology platforms. Would a brief conversation about security readiness be worthwhile?"*
+* **LLM Analysis Status**: `NOT VERIFIED` (`GEMINI_API_KEY` / `OPENAI_API_KEY` required in environment)
 
 ---
 
@@ -65,6 +61,4 @@ These 3 leads were discovered dynamically from live web searches, scraped in rea
 * **Observed Exposure Signals**: Cloud infrastructure, customer PII
 * **Website Status**: `Verified` (HTTP 200 OK)
 * **Decision Maker**: `Not verified` (Recommended Role: `CTO / Information Security Lead`)
-
-### Generated Personalised Outreach
-> *"Hi [Contact], I noticed Tierdata provides cloud infrastructure and managed IT services in Nairobi. Protecting client multi-tenant infrastructure and managing access protocols are critical operational areas. Would a quick security discussion be helpful?"*
+* **LLM Analysis Status**: `NOT VERIFIED` (`GEMINI_API_KEY` / `OPENAI_API_KEY` required in environment)
