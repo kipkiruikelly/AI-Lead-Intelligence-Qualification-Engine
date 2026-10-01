@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 main.py — AI-Powered Lead Intelligence & Qualification Engine
-═════════════════════════════════════════════════════════════
-Orchestrates live provider-backed lead discovery, scraping enrichment,
-deterministic scoring, LLM synthesis, schema validation, and persistence.
+
+Orchestrates lead discovery, research enrichment, deterministic scoring,
+LLM structured analysis, schema validation, and persistence.
 """
 
 from __future__ import annotations

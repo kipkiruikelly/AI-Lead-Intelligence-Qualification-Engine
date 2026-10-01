@@ -1,6 +1,5 @@
-# ═══════════════════════════════════════════════════════════════
-#  AI Lead Intelligence & Qualification Engine — Configuration
-# ═══════════════════════════════════════════════════════════════
+# Target and pipeline settings for AI Lead Intelligence & Qualification Engine
+
 
 target:
   industries:
