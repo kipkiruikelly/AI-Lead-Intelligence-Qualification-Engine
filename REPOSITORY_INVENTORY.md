@@ -7,6 +7,7 @@
 | `requirements.txt` | Python runtime dependency specifications | Environment | Yes | Yes | KEEP |
 | `architecture.md` | Architecture documentation & diagrams | Developer / Assessor | No | Yes | KEEP — DOCUMENTATION |
 | `README.md` | Primary setup & user guide | Developer / Assessor | No | Yes | KEEP — DOCUMENTATION |
+| `DESIGN_DECISIONS.md` | Architectural & implementation rationale document | Developer / Assessor | No | Yes | KEEP — DOCUMENTATION |
 | `llm_output_schema.json` | JSON Schema reference specification | Developer / Documentation | No | Yes | KEEP — DOCUMENTATION |
 | `pipeline/__init__.py` | Pipeline package initializer | Python import | Yes | Yes | KEEP |
 | `pipeline/deduplicator.py` | Canonical domain deduplication logic | `discoverer.py` | Yes | Yes | KEEP |
